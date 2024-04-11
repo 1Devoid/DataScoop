@@ -1,0 +1,91 @@
+html {
+  font-size: 16px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.2;
+  color: $blackColor;
+  overflow-x: hidden;
+  height: 100%;
+  min-width: 20rem;
+  background: rgba(176, 181, 239, 0.2);
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    rgba(176, 181, 239, 0.2) 0%,
+    #ffffff 100%
+  );
+  background: -webkit-radial-gradient(
+    circle farthest-corner at center center,
+    rgba(176, 181, 239, 0.2) 0%,
+    #ffffff 100%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at center center,
+    rgba(176, 181, 239, 0.2) 0%,
+    #ffffff 100%
+  );
+  // font-variant-numeric: lining-nums;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*::selection {
+  color: $whiteColor;
+  background: $accentColor;
+}
+
+.accent-block {
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px -2px rgba(16, 24, 40, 0.05),
+    0 4px 8px -2px rgba(16, 24, 40, 0.1);
+}
+
+.accent-btn {
+  background-color: #445082;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #ffffff;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #2b3c6b;
+  }
+  &:disabled {
+    background-color: #d5d6fd;
+  }
+}
+
+.accent-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #445082;
+}
