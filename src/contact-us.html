@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/head.html', { 'title': 'Jupiter' })
+
+<body class="body">
+
+  <div class="wrapper">
+
+    @@include('html/header.html')
+
+    <main class="main bg-white">
+      <section class="pb-[48px]">
+        <div class="container-custom">
+          <a href="home-saved.html" class="accent-title-dark pt-[32px] ml-3 mb-[32px] flex items-center">
+            <svg class="mr-[20px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.2559 4.41074C12.5814 4.73618 12.5814 5.26382 12.2559 5.58925L7.84519 10L12.2559 14.4107C12.5814 14.7362 12.5814 15.2638 12.2559 15.5893C11.9305 15.9147 11.4029 15.9147 11.0774 15.5893L6.07742 10.5893C5.75198 10.2638 5.75198 9.73618 6.07742 9.41074L11.0774 4.41074C11.4029 4.0853 11.9305 4.0853 12.2559 4.41074Z"
+                fill="#2C2E30" />
+            </svg>
+            Contact Us
+          </a>
+          <div class="py-[20px] border-y border-y-[#E6E6E7]">
+            <div class="flex gap-[60px] mb-[20px]">
+              <div class="w-[350px]">
+                <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">First Name</div>
+              </div>
+              <div class="w-full max-w-[512px]">
+                <input class="w-[100%] border-[#D0D5DD] border rounded-xl py-[10px] px-[14px]" type="text"
+                  name="first-name" id="first-name" data-settings placeholder="First Name">
+              </div>
+            </div>
+            <div class="flex gap-[60px]">
+              <div class="w-[350px]">
+                <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">Last Name</div>
+              </div>
+              <div class="w-full max-w-[512px]">
+                <input class="w-[100%] border-[#D0D5DD] border rounded-xl py-[10px] px-[14px]" type="text"
+                  name="last-name" id="last-name" data-settings placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+          <div class="py-[20px] border-b border-b-[#E6E6E7] flex gap-[60px]">
+            <div class="w-[350px]">
+              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">Organization Name</div>
+            </div>
+            <div class="relative w-full max-w-[512px]">
+              <input class="w-[100%] border-[#D0D5DD] border rounded-xl py-[10px] px-[14px]" type="text"
+                name="organization" id="organization" data-settings placeholder="Organization Name">
+            </div>
+          </div>
+          <div class="py-[20px] border-b border-b-[#E6E6E7] flex gap-[60px]">
+            <div class="w-[350px]">
+              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">Add an attachment</div>
+            </div>
+            <div class="w-full max-w-[512px]" id="edit-photo-block">
+              <label
+                class="py-4 px-6 flex flex-col items-center border-dashed border-2 border-[#E6E6E7] rounded-xl cursor-pointer"
+                for="file">
+                <input class="w-0 h-0 hidden" type="file" id="file" />
+                <svg class="mb-3" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="40" height="40" rx="20" fill="#F4F6F8" />
+                  <rect x="3" y="3" width="40" height="40" rx="20" stroke="#F9FBFD" stroke-width="6" />
+                  <path
+                    d="M19.6667 26.3333L23 23M23 23L26.3333 26.3333M23 23V30.5M29.6667 26.9524C30.6846 26.1117 31.3333 24.8399 31.3333 23.4167C31.3333 20.8854 29.2813 18.8333 26.75 18.8333C26.5679 18.8333 26.3976 18.7383 26.3051 18.5814C25.2184 16.7374 23.212 15.5 20.9167 15.5C17.4649 15.5 14.6667 18.2982 14.6667 21.75C14.6667 23.4718 15.3629 25.0309 16.4891 26.1613"
+                    stroke="#45484C" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="text-center text-[#35383B] text-[14px] mb-1">
+                  <a href="#" class="pr-1 text-[#2C2E30] text-[14px] font-semibold">Click to upload</a>
+                  or drag and drop
+                </div>
+                <div class="text-center text-[#35383B] text-[12px]">
+                  SVG, PNG, JPG or GIF (max. 800x400px)
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="py-[20px] border-b border-b-[#E6E6E7] flex gap-[60px]">
+            <div class="w-[350px]">
+              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">Email</div>
+            </div>
+            <div class="relative w-full max-w-[512px]">
+              <input class="w-[100%] border-[#D0D5DD] border rounded-xl py-[10px] px-[14px] pl-[42px]" type="email"
+                name="email" id="email" data-settings placeholder="you@example.com">
+              <svg class="absolute top-[10px] left-[14px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.9166 14.9999L12.381 9.99992M7.61905 9.99992L2.08336 14.9999M1.66667 5.83325L8.47077 10.5961C9.02174 10.9818 9.29723 11.1746 9.59689 11.2493C9.86158 11.3153 10.1384 11.3153 10.4031 11.2493C10.7028 11.1746 10.9783 10.9818 11.5292 10.5961L18.3333 5.83325M5.66667 16.6666H14.3333C15.7335 16.6666 16.4335 16.6666 16.9683 16.3941C17.4387 16.1544 17.8212 15.772 18.0609 15.3016C18.3333 14.7668 18.3333 14.0667 18.3333 12.6666V7.33325C18.3333 5.93312 18.3333 5.23306 18.0609 4.69828C17.8212 4.22787 17.4387 3.84542 16.9683 3.60574C16.4335 3.33325 15.7335 3.33325 14.3333 3.33325H5.66667C4.26654 3.33325 3.56647 3.33325 3.03169 3.60574C2.56129 3.84542 2.17884 4.22787 1.93915 4.69828C1.66667 5.23306 1.66667 5.93312 1.66667 7.33325V12.6666C1.66667 14.0667 1.66667 14.7668 1.93915 15.3016C2.17884 15.772 2.56129 16.1544 3.03169 16.3941C3.56647 16.6666 4.26654 16.6666 5.66667 16.6666Z"
+                  stroke="#AAABAC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="py-[20px] border-b border-b-[#E6E6E7] flex gap-[60px]">
+            <div class="w-[350px]">
+              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">How can we help?</div>
+            </div>
+            <div class="relative w-full max-w-[512px]">
+              <textarea class="w-[100%] h-[156px] border-[#D0D5DD] border rounded-xl py-[10px] px-[14px]"
+                name="description" placeholder="Enter a description..."></textarea>
+            </div>
+          </div>
+          <div class="py-[20px] flex gap-[60px]">
+            <div class="w-[350px]">
+            </div>
+            <div class="flex justify-end w-full max-w-[512px] gap-3" id="edit-btns">
+              <button id="contact-us-submit"
+                class="py-[8px] w-[80px] h-[40px] leading-[140%] rounded-xl text-[#ffffff] text-[14px] font-semibold bg-[#445082] hover:bg-[#2b3c6b] ease-in-out duration-300"
+                type="button">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Thanks popup -->
+    <div id="thanks-popup" tabindex="-1"
+      class="hidden flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 z-50 w-full md:inset-0 h-modal md:h-full bg-[#82838580]">
+      <div class="accent-block relative p-10  w-full max-w-[640px] mx-4">
+        <button class="absolute top-2 end-2 p-4" id="close-thanks-popup" type="button">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7517 1L1.75171 11M1.75171 1L11.7517 11" stroke="#2B3C6B" stroke-width="1.66667"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="mb-6">
+          <div class="text-center mb-4 text-[#1D2E54] text-[32px] font-semibold">Thanks for your message</div>
+          <div class="text-center text-[#45484C] text-[16px]">We will get back to you within 48 hours</div>
+        </div>
+        <div class="flex justify-end w-full gap-3 border-t border-t-[#E6E6E7] pt-6">
+          <button id="thanks-cancel"
+            class="py-[8px] w-[80px] h-[40px] leading-[140%] border border-[#CACBCB] rounded-xl text-[#2C2E30] text-[14px] font-semibold hover:bg-[#F3F2FF] hover:border-[#AAABAC] ease-in-out duration-300"
+            type="button">
+            Cancel
+          </button>
+          <a href="home-saved.html"
+            class="py-[8px] px-[18px] h-[40px] leading-[150%] rounded-xl text-[#ffffff] text-[14px] font-semibold bg-[#445082] hover:bg-[#2b3c6b] ease-in-out duration-300"
+            type="button">
+            Back to Main
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  @@include('html/script.html')
+</body>
+
+</html>

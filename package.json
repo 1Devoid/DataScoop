@@ -85,6 +85,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "flowbite": "^2.3.0",
     "swiper": "^8.4.7",
     "tw-elements": "^2.0.0"
   }

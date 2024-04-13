@@ -9,11 +9,11 @@
     @@include('html/header.html')
 
     <main class="main ">
-      <section class="">
+      <section class="pt-10 mb-10">
         <div class="container-custom flex flex-col items-center">
-          <div class="flex items-center justify-between w-full pt-10 mb-6">
+          <div class="flex items-center justify-between w-full mb-6">
             <h1 class="accent-title-dark">
-              Index
+              Discover Segment that are moving your Metrics
             </h1>
             <div class="flex gap-4">
               <button
@@ -75,6 +75,74 @@
               </svg>
               Learn
             </a>
+          </div>
+          <div class="accent-block border border-[#E6E6E7] w-full max-w-[1088px] p-6">
+            <div class="py-[20px] border-b border-b-[#E6E6E7] flex items-center gap-[32px]">
+              <div class="w-full max-w-[280px]">
+                <div class="w-[100%] text-[#1F2022] text-[14px] font-medium leading-[140%] flex items-center">
+                  Select Report Type
+                  <div class="relative">
+                    <svg class="tooltip-icon ml-1 stroke-[#AAABAC] hover:stroke-[#35383B]" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_795_5633)">
+                        <path
+                          d="M6.06004 6.00016C6.21678 5.55461 6.52614 5.1789 6.93334 4.93958C7.34055 4.70027 7.8193 4.61279 8.28483 4.69264C8.75035 4.77249 9.17259 5.01451 9.47676 5.37585C9.78093 5.73718 9.94741 6.19451 9.94671 6.66683C9.94671 8.00016 7.94671 8.66683 7.94671 8.66683M8.00004 11.3335H8.00671M14.6667 8.00016C14.6667 11.6821 11.6819 14.6668 8.00004 14.6668C4.31814 14.6668 1.33337 11.6821 1.33337 8.00016C1.33337 4.31826 4.31814 1.3335 8.00004 1.3335C11.6819 1.3335 14.6667 4.31826 14.6667 8.00016Z"
+                          stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_795_5633">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div
+                      class="tooltip hidden absolute z-[1] -top-[76px] -end-[148px] bg-[#ffffff] w-[320px] py-2 px-3 text-[#35383B] text-[12px] leading-[130%] shadow-xl rounded-lg">
+                      Target direction of the metric movement E.g. “Increasing for reveue and “ecreasing” for canceled
+                      orders.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-full max-w-[512px]">
+                <button data-rotate id="btn-report-type" data-dropdown-toggle="dd-report-type"
+                  class="flex justify-between items-center w-[100%] text-[#151618] text-[16px] font-medium border-[#D0D5DD] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                  type="button">Date Range Comparison Report
+                  <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.41083 6.91058C4.73626 6.58514 5.2639 6.58514 5.58934 6.91058L10.0001 11.3213L14.4108 6.91058C14.7363 6.58514 15.2639 6.58514 15.5893 6.91058C15.9148 7.23602 15.9148 7.76366 15.5893 8.08909L10.5893 13.0891C10.2639 13.4145 9.73626 13.4145 9.41083 13.0891L4.41083 8.08909C4.08539 7.76366 4.08539 7.23602 4.41083 6.91058Z"
+                      fill="#828385" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dd-report-type"
+                  class="z-10 hidden w-full bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="btn-report-type">
+                    <li class="my-[2px] mx-[6px]">
+                      <div data-dd-item
+                        class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                        <div class="flex items-center">
+                          <input data-dd-checkbox id="report-type-1" type="checkbox" value=""
+                            class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                          <label class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer"
+                            for="report-type-1">Country</label>
+                        </div>
+                        <div class="flex items-center">
+                          <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                            7 distinct values
+                          </div>
+                          <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
