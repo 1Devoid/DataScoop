@@ -8,6 +8,8 @@ import editUserPhoto from './modules/edit-user-photo.js';
 import editSettings from './modules/edit-settings.js';
 import rotateArrowInput from './modules/rotate-arrow-input.js';
 import checkCheckbox from './modules/check-checkbox.js';
+import truncateText from './modules/truncate-text.js';
+import selectAllCheckbox from './modules/select-all-checkbox.js';
 
 showPassword('#password', '#password + #show-password');
 showPassword('#new-password', '#new-password + #show-password');
@@ -20,3 +22,8 @@ editSettings();
 showThanksPopup();
 rotateArrowInput();
 checkCheckbox();
+truncateText();
+selectAllCheckbox();
+
+import { Collapse, initTWE } from 'tw-elements';
+initTWE({ Collapse });

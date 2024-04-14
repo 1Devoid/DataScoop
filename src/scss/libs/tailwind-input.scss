@@ -5,3 +5,28 @@
 [type='checkbox'] {
   padding: 1px !important;
 }
+
+[multiple]:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='email']:focus,
+[type='month']:focus,
+[type='number']:focus,
+[type='password']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='text']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='week']:focus,
+button[data-rotate]:focus,
+select:focus,
+textarea:focus {
+  border-color: #aaabac;
+  outline: 4px #f3f2ff solid;
+  outline-offset: 0;
+}
+
+span.focused.bg-blue-700 {
+  background-color: #445082;
+}
