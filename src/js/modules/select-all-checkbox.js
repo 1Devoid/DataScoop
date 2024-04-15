@@ -10,6 +10,7 @@ function selectAllCheckbox() {
           const checkboxes = menu.querySelectorAll('[data-dd-checkbox]');
 
           checkboxes.forEach((cb) => {
+            cb.click();
             cb.checked = true;
           });
         }
