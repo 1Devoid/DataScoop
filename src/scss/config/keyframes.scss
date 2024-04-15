@@ -1,7 +1,12 @@
-@keyframes name {
-  0% {
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-  100% {
-  }
+.submit-loader {
+  animation: spin 1s linear infinite;
 }

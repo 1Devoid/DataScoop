@@ -1136,6 +1136,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 0px;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1253,6 +1261,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 100vh;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .max-h-\[604px\] {
   max-height: 604px;
 }
@@ -1361,8 +1373,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100vw;
 }
 
-.w-\[100px\] {
-  width: 100px;
+.min-w-\[100px\] {
+  min-width: 100px;
 }
 
 .min-w-\[240px\] {
@@ -1371,22 +1383,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-\[150px\] {
-  min-width: 150px;
-}
-
-.min-w-\[250px\] {
-  min-width: 250px;
-}
-
-.min-w-\[100\%\] {
-  min-width: 100%;
-}
-
-.min-w-\[100px\] {
-  min-width: 100px;
 }
 
 .max-w-\[1012px\] {
@@ -1954,6 +1950,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(244 246 248 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F6F6FD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 246 253 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#f0f2f5\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 242 245 / var(--tw-bg-opacity));
@@ -2028,11 +2029,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -2164,6 +2160,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 1.5rem;
 }
 
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
 .pb-\[48px\] {
   padding-bottom: 48px;
 }
@@ -2250,10 +2250,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
-}
-
-.pb-\[20px\] {
-  padding-bottom: 20px;
 }
 
 .text-left {
@@ -2517,6 +2513,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow {
