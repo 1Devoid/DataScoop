@@ -14,6 +14,9 @@ import truncateText from './modules/truncate-text.js';
 import selectAllCheckbox from './modules/select-all-checkbox.js';
 import showSubmitLoader from './modules/show-submit-loader.js';
 import showSettings from './modules/show-settings.js';
+import showSharePopup from './modules/show-share-popup.js';
+import showContextPopups from './modules/show-context-popup.js';
+import showCustomizePopup from './modules/show-customize-popup.js';
 
 initTWE({ Collapse, Tab });
 showPassword('#password', '#password + #show-password');
@@ -31,3 +34,6 @@ truncateText();
 selectAllCheckbox();
 showSubmitLoader();
 showSettings();
+showSharePopup();
+showContextPopups();
+showCustomizePopup();

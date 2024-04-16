@@ -666,10 +666,10 @@
                                           class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
                                         <label
                                           class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
-                                          for="filters-values-2">Country</label>
+                                          for="filters-values-2">cn</label>
                                       </div>
                                       <div class="flex items-center">
-                                        <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
                                           2 distinct values
                                         </div>
                                         <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
@@ -689,10 +689,10 @@
                                           class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
                                         <label
                                           class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
-                                          for="filters-values-3">Gender</label>
+                                          for="filters-values-3">en</label>
                                       </div>
                                       <div class="flex items-center">
-                                        <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
                                           7 distinct values
                                         </div>
                                         <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
@@ -712,10 +712,10 @@
                                           class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
                                         <label
                                           class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
-                                          for="filters-values-4">Age</label>
+                                          for="filters-values-4">es</label>
                                       </div>
                                       <div class="flex items-center">
-                                        <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
                                           45 distinct values
                                         </div>
                                         <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
@@ -735,10 +735,10 @@
                                           class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
                                         <label
                                           class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
-                                          for="filters-values-5">Language</label>
+                                          for="filters-values-5">gr</label>
                                       </div>
                                       <div class="flex items-center">
-                                        <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
                                           5 distinct values
                                         </div>
                                         <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
@@ -789,10 +789,62 @@
             </div>
           </div>
         </div>
-
       </section>
 
     </main>
+
+    <!-- Share popup -->
+    <div id="share-popup" tabindex="-1"
+      class="hidden flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 z-50 w-full md:inset-0 h-modal md:h-full bg-[#82838580]">
+      <div class="accent-block relative p-10 w-full max-w-[640px] mx-4">
+        <button class="absolute top-2 end-2 p-4" id="close-share-popup" type="button">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7517 1L1.75171 11M1.75171 1L11.7517 11" stroke="#2B3C6B" stroke-width="1.66667"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class=" flex flex-col items-center">
+          <div class="text-[#1D2E54] text-[32px] font-semibold leading-[120%] mb-6">Share Analysis</div>
+          <div class="w-full">
+            <div class="flex items-end gap-2 pb-6 border-b border-b-[#E6E6E7]">
+              <div class="relative w-full">
+                <label class="text-[14px] font-medium inline-block text-[#2C2E30] mb-[6px]" for="email">Add
+                  Email</label>
+                <input class="border border-[#AAABAC] rounded-xl px-[14px] pl-[42px] py-[9px] w-[100%]" type="email"
+                  name="email" id="email" placeholder="Enter your Email">
+                <svg class="absolute bottom-[12px] left-[14px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9165 15L12.3808 10M7.61889 10L2.0832 15M1.6665 5.83337L8.4706 10.5962C9.02158 10.9819 9.29707 11.1748 9.59672 11.2495C9.86142 11.3154 10.1383 11.3154 10.403 11.2495C10.7026 11.1748 10.9781 10.9819 11.5291 10.5962L18.3332 5.83337M5.6665 16.6667H14.3332C15.7333 16.6667 16.4334 16.6667 16.9681 16.3942C17.4386 16.1545 17.821 15.7721 18.0607 15.3017C18.3332 14.7669 18.3332 14.0668 18.3332 12.6667V7.33337C18.3332 5.93324 18.3332 5.23318 18.0607 4.6984C17.821 4.22799 17.4386 3.84554 16.9681 3.60586C16.4334 3.33337 15.7333 3.33337 14.3332 3.33337H5.6665C4.26637 3.33337 3.56631 3.33337 3.03153 3.60586C2.56112 3.84554 2.17867 4.22799 1.93899 4.6984C1.6665 5.23318 1.6665 5.93324 1.6665 7.33337V12.6667C1.6665 14.0668 1.6665 14.7669 1.93899 15.3017C2.17867 15.7721 2.56112 16.1545 3.03153 16.3942C3.56631 16.6667 4.26637 16.6667 5.6665 16.6667Z"
+                    stroke="#AAABAC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <button id="share-popup-submit"
+                class="text-[16px] leading-[140%] duration-300 ease-in-out font-semibold h-[44px] py-[10px] rounded-xl w-[120px] bg-[#445082] hover:bg-[#2b3c6b] text-[#ffffff]"
+                type="button">
+                Submit
+              </button>
+            </div>
+            <div class="pt-6 flex justify-between items-center gap-4">
+              <button
+                class="py-[10px] flex items text-[#2B3C6B] hover:text-[#1D2E54] text-[16px] font-semibold leading-[140%]"
+                type="button">
+                <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.3332 17.5V15.8333C18.3332 14.2801 17.2709 12.9751 15.8332 12.605M12.9165 2.7423C14.1381 3.23679 14.9998 4.43443 14.9998 5.83333C14.9998 7.23224 14.1381 8.42988 12.9165 8.92437M14.1665 17.5C14.1665 15.9469 14.1665 15.1703 13.9128 14.5577C13.5745 13.741 12.9255 13.092 12.1088 12.7537C11.4962 12.5 10.7196 12.5 9.1665 12.5H6.6665C5.11337 12.5 4.3368 12.5 3.72423 12.7537C2.90747 13.092 2.25855 13.741 1.92024 14.5577C1.6665 15.1703 1.6665 15.9469 1.6665 17.5M11.2498 5.83333C11.2498 7.67428 9.75745 9.16667 7.9165 9.16667C6.07555 9.16667 4.58317 7.67428 4.58317 5.83333C4.58317 3.99238 6.07555 2.5 7.9165 2.5C9.75745 2.5 11.2498 3.99238 11.2498 5.83333Z"
+                    stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Public to Users Team
+              </button>
+              <button
+                class="w-[120px] h-[44px] p-[10px] text-[16px] font-semibold leading-[150%] rounded-xl bg-[#F3F2FF] hover:bg-[#D5D6FD] text-[#2B3C6B] hover:text-[#1D2E54] ease-in-out duration-300"
+                type="button">Copy Link</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 

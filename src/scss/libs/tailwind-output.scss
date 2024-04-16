@@ -862,6 +862,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   bottom: 1.75rem;
 }
 
+.bottom-\[12px\] {
+  bottom: 12px;
+}
+
 .end-2 {
   inset-inline-end: 0.5rem;
 }
@@ -1189,6 +1193,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 0px;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1265,16 +1273,32 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 100vh;
 }
 
+.max-h-\[490px\] {
+  max-height: 490px;
+}
+
 .max-h-\[604px\] {
   max-height: 604px;
+}
+
+.max-h-\[342px\] {
+  max-height: 342px;
 }
 
 .min-h-\[1\.5rem\] {
   min-height: 1.5rem;
 }
 
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
 .w-0 {
   width: 0px;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-11 {
@@ -1299,6 +1323,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-\[116px\] {
   width: 116px;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[1262px\] {
@@ -1389,6 +1417,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100vw;
 }
 
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[240px\] {
+  width: 240px;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -1399,6 +1435,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[136px\] {
+  min-width: 136px;
 }
 
 .max-w-\[1012px\] {
@@ -1467,6 +1507,18 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[680px\] {
+  max-width: 680px;
+}
+
+.max-w-\[630px\] {
+  max-width: 630px;
+}
+
+.max-w-\[932px\] {
+  max-width: 932px;
 }
 
 .shrink-0 {
@@ -1581,6 +1633,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   resize: both;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -1621,6 +1677,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .items-center {
@@ -1941,6 +2003,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[red\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 0 0 / var(--tw-border-opacity));
+}
+
 .border-y-\[\#E6E6E7\] {
   --tw-border-opacity: 1;
   border-top-color: rgb(230 230 231 / var(--tw-border-opacity));
@@ -2044,8 +2111,17 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-clip-padding {
   background-clip: padding-box;
+}
+
+.stroke-\[\#445082\] {
+  stroke: #445082;
 }
 
 .stroke-\[\#AAABAC\] {
@@ -2216,6 +2292,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 8px;
 }
 
+.py-\[9px\] {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -2242,6 +2328,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .pl-\[1xp\] {
@@ -2319,6 +2409,18 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
+}
+
+.pl-\[48px\] {
+  padding-left: 48px;
+}
+
+.pl-\[36px\] {
+  padding-left: 36px;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -2542,6 +2644,16 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#333333\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.text-\[\#813232\] {
+  --tw-text-opacity: 1;
+  color: rgb(129 50 50 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3113,6 +3225,10 @@ span.focused.bg-blue-700 {
 
 .hover\:bg-zinc-200\/60:hover {
   background-color: rgb(228 228 231 / 0.6);
+}
+
+.hover\:stroke-\[\#1D2E54\]:hover {
+  stroke: #1D2E54;
 }
 
 .hover\:stroke-\[\#35383B\]:hover {
