@@ -93,7 +93,7 @@
           <div class="container-custom">
             <!--Tab header-->
             <div class="flex justify-between items-center relative mb-10">
-              <h1 class="text-[#1D2E54] text-[32px] font-semibold">Overview</h1>
+              <h1 class="text-[#1D2E54] text-[32px] font-semibold">Top Driving Segments</h1>
               <div class="flex items-center gap-4">
                 <button
                   class="bg-[#F3F2FF] hover:bg-[#D5D6FD] ease-in-out duration-300 rounded-xl w-[44px] h-[44px] flex justify-center items-center"
@@ -785,7 +785,1459 @@
             </div>
             <!--Tabs content-->
             <div class="">
-
+              <!-- Table -->
+              <div class="rounded-[28px] border border-[#E6E6E7] shadow-md py-6 w-full">
+                <div class="mb-6 px-6 flex justify-between items-center gap-4">
+                  <div class="relative flex items-center gap-4 pr-6">
+                    <div class="text-[#35383B] text-[16px]">Mode:</div>
+                    <button data-rotate id="btn-mode" data-dropdown-toggle="dd-mode"
+                      class="flex justify-between items-center w-[192px] text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                      type="button">All Top Segments
+                      <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.41083 6.91058C4.73626 6.58514 5.2639 6.58514 5.58934 6.91058L10.0001 11.3213L14.4108 6.91058C14.7363 6.58514 15.2639 6.58514 15.5893 6.91058C15.9148 7.23602 15.9148 7.76366 15.5893 8.08909L10.5893 13.0891C10.2639 13.4145 9.73626 13.4145 9.41083 13.0891L4.41083 8.08909C4.08539 7.76366 4.08539 7.23602 4.41083 6.91058Z"
+                          fill="#828385" />
+                      </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div data-dd-menu id="dd-mode"
+                      class="z-10 hidden w-[240px] border border-[#E6E6E7] bg-white divide-y divide-gray-100 rounded-xl shadow dark:bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="btn-mode">
+                        <li class="my-[2px] mx-[6px]">
+                          <div data-dd-item
+                            class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                            <div class="flex items-center">
+                              <input data-dd-checkbox id="mode-1" type="checkbox" value="" name="mode"
+                                class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                              <label
+                                class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                for="mode-1">All Top Segments</label>
+                            </div>
+                            <div class="flex items-center">
+                              <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                7 distinct values
+                              </div>
+                              <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082" stroke-width="1.66667"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-[2px] mx-[6px]">
+                          <div data-dd-item
+                            class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                            <div class="flex items-center">
+                              <input data-dd-checkbox id="mode-2" type="checkbox" value="" name="mode"
+                                class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                              <label
+                                class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                for="mode-2">Noticiable Only</label>
+                            </div>
+                            <div class="flex items-center">
+                              <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                7 distinct values
+                              </div>
+                              <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082" stroke-width="1.66667"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <svg class="absolute top-0 end-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_497_42999)">
+                        <path
+                          d="M6.06016 6.00016C6.2169 5.55461 6.52626 5.1789 6.93347 4.93958C7.34067 4.70027 7.81943 4.61279 8.28495 4.69264C8.75047 4.77249 9.17271 5.01451 9.47688 5.37585C9.78106 5.73718 9.94753 6.19451 9.94683 6.66683C9.94683 8.00016 7.94683 8.66683 7.94683 8.66683M8.00016 11.3335H8.00683M14.6668 8.00016C14.6668 11.6821 11.6821 14.6668 8.00016 14.6668C4.31826 14.6668 1.3335 11.6821 1.3335 8.00016C1.3335 4.31826 4.31826 1.3335 8.00016 1.3335C11.6821 1.3335 14.6668 4.31826 14.6668 8.00016Z"
+                          stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_497_42999">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="h-[44px] w-[1px] border-r border-r-[#E6E6E7]"></div>
+                  <div class="relative flex items-center gap-4 px-6">
+                    <div class="text-[#35383B] text-[16px]">Group segments:</div>
+                    <label class="items-center cursor-pointer inline-flex">
+                      <input type="checkbox" value="" class="peer sr-only" autocompleted="">
+                      <div
+                        class="rounded-full after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:h-5 after:rounded-full after:start-[2px] after:top-[2px] after:transition-all after:w-5 bg-gray-200 h-6 peer peer-checked:after:translate-x-full peer-checked:bg-[#445082] peer-focus:outline-none peer-focus:ring-4 relative rtl:peer-checked:after:-translate-x-full w-11">
+                      </div>
+                    </label>
+                    <svg class="absolute top-[-10px] end-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_497_42999)">
+                        <path
+                          d="M6.06016 6.00016C6.2169 5.55461 6.52626 5.1789 6.93347 4.93958C7.34067 4.70027 7.81943 4.61279 8.28495 4.69264C8.75047 4.77249 9.17271 5.01451 9.47688 5.37585C9.78106 5.73718 9.94753 6.19451 9.94683 6.66683C9.94683 8.00016 7.94683 8.66683 7.94683 8.66683M8.00016 11.3335H8.00683M14.6668 8.00016C14.6668 11.6821 11.6821 14.6668 8.00016 14.6668C4.31826 14.6668 1.3335 11.6821 1.3335 8.00016C1.3335 4.31826 4.31826 1.3335 8.00016 1.3335C11.6821 1.3335 14.6668 4.31826 14.6668 8.00016Z"
+                          stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_497_42999">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="h-[44px] w-[1px] border-r border-r-[#E6E6E7]"></div>
+                  <div class="flex items-center">
+                    <div class="text-[#35383B] text-[16px] leading-[150%] py-2 px-4 border-r border-r-[#E6E6E7]">
+                      Showing 2 of 2 segments
+                    </div>
+                    <button
+                      class="flex justify-center items-center h-[40px] rounded-xl text-[14px] duration-300 ease-in-out font-semibold bg-[#F3F2FF] hover:bg-[#D5D6FD] hover:text-[#1D2E54] leading-[150%] py-[10px] px-[17px] ml-4 text-[#2B3C6B]"
+                      type="button">
+                      <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5"
+                          stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+                <div class="flex flex-col mb-[32px] overflow-hidden">
+                  <div class="lg:-mx-8 overflow-x-auto sm:-mx-6">
+                    <div class="py-2 inline-block lg:px-8 min-w-full sm:px-6">
+                      <div class="border-[#E6E6E7] border overflow-hidden">
+                        <table class="text-sm dark:text-white font-light min-w-full text-left text-surface">
+                          <thead
+                            class="border-[#E6E6E7] border-b text-[#35383B] bg-[#F4F6F8] leading-[140%] text-[12px] ">
+                            <tr>
+                              <th scope="col" class="font-medium px-6 py-[14px] ">
+                                <div class="whitespace-nowrap flex items-center gap-1 leading-[130%]">
+                                  Segment
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M6.05967 6.00016C6.21641 5.55461 6.52578 5.1789 6.93298 4.93958C7.34018 4.70027 7.81894 4.61279 8.28446 4.69264C8.74998 4.77249 9.17222 5.01451 9.47639 5.37585C9.78057 5.73718 9.94705 6.19451 9.94634 6.66683C9.94634 8.00016 7.94634 8.66683 7.94634 8.66683M7.99967 11.3335H8.00634M14.6663 8.00016C14.6663 11.6821 11.6816 14.6668 7.99967 14.6668C4.31778 14.6668 1.33301 11.6821 1.33301 8.00016C1.33301 4.31826 4.31778 1.3335 7.99967 1.3335C11.6816 1.3335 14.6663 4.31826 14.6663 8.00016Z"
+                                      stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                  </svg>
+                                </div>
+                              </th>
+                              <th scope="col" class="font-medium px-6 py-[14px]">
+                                <div class="whitespace-nowrap flex items-center gap-1 leading-[130%]">
+                                  DISTINCT User ID
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M6.05967 6.00016C6.21641 5.55461 6.52578 5.1789 6.93298 4.93958C7.34018 4.70027 7.81894 4.61279 8.28446 4.69264C8.74998 4.77249 9.17222 5.01451 9.47639 5.37585C9.78057 5.73718 9.94705 6.19451 9.94634 6.66683C9.94634 8.00016 7.94634 8.66683 7.94634 8.66683M7.99967 11.3335H8.00634M14.6663 8.00016C14.6663 11.6821 11.6816 14.6668 7.99967 14.6668C4.31778 14.6668 1.33301 11.6821 1.33301 8.00016C1.33301 4.31826 4.31778 1.3335 7.99967 1.3335C11.6816 1.3335 14.6663 4.31826 14.6663 8.00016Z"
+                                      stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                  </svg>
+                                </div>
+                              </th>
+                              <th scope="col" class="font-medium px-6 py-[14px]">
+                                <div class="whitespace-nowrap flex items-center gap-1 leading-[130%]">
+                                  Absolute Contribution
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M6.05967 6.00016C6.21641 5.55461 6.52578 5.1789 6.93298 4.93958C7.34018 4.70027 7.81894 4.61279 8.28446 4.69264C8.74998 4.77249 9.17222 5.01451 9.47639 5.37585C9.78057 5.73718 9.94705 6.19451 9.94634 6.66683C9.94634 8.00016 7.94634 8.66683 7.94634 8.66683M7.99967 11.3335H8.00634M14.6663 8.00016C14.6663 11.6821 11.6816 14.6668 7.99967 14.6668C4.31778 14.6668 1.33301 11.6821 1.33301 8.00016C1.33301 4.31826 4.31778 1.3335 7.99967 1.3335C11.6816 1.3335 14.6663 4.31826 14.6663 8.00016Z"
+                                      stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                  </svg>
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M8.00033 2.6665C8.36852 2.6665 8.66699 2.96498 8.66699 3.33317V11.057L12.1956 7.52843C12.4559 7.26808 12.878 7.26808 13.1384 7.52843C13.3987 7.78878 13.3987 8.21089 13.1384 8.47124L8.47173 13.1379C8.21138 13.3983 7.78927 13.3983 7.52892 13.1379L2.86225 8.47124C2.6019 8.21089 2.6019 7.78878 2.86225 7.52843C3.1226 7.26808 3.54471 7.26808 3.80506 7.52843L7.33366 11.057V3.33317C7.33366 2.96498 7.63214 2.6665 8.00033 2.6665Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                </div>
+                              </th>
+                              <th scope="col" class="font-medium px-6 py-[14px]">
+                                <div class="whitespace-nowrap flex items-center gap-1 leading-[130%]">
+                                  Relative Performance
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M6.05967 6.00016C6.21641 5.55461 6.52578 5.1789 6.93298 4.93958C7.34018 4.70027 7.81894 4.61279 8.28446 4.69264C8.74998 4.77249 9.17222 5.01451 9.47639 5.37585C9.78057 5.73718 9.94705 6.19451 9.94634 6.66683C9.94634 8.00016 7.94634 8.66683 7.94634 8.66683M7.99967 11.3335H8.00634M14.6663 8.00016C14.6663 11.6821 11.6816 14.6668 7.99967 14.6668C4.31778 14.6668 1.33301 11.6821 1.33301 8.00016C1.33301 4.31826 4.31778 1.3335 7.99967 1.3335C11.6816 1.3335 14.6663 4.31826 14.6663 8.00016Z"
+                                      stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                  </svg>
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M8.00033 2.6665C8.36852 2.6665 8.66699 2.96498 8.66699 3.33317V11.057L12.1956 7.52843C12.4559 7.26808 12.878 7.26808 13.1384 7.52843C13.3987 7.78878 13.3987 8.21089 13.1384 8.47124L8.47173 13.1379C8.21138 13.3983 7.78927 13.3983 7.52892 13.1379L2.86225 8.47124C2.6019 8.21089 2.6019 7.78878 2.86225 7.52843C3.1226 7.26808 3.54471 7.26808 3.80506 7.52843L7.33366 11.057V3.33317C7.33366 2.96498 7.63214 2.6665 8.00033 2.6665Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                </div>
+                              </th>
+                              <th scope="col" class="font-medium px-6 py-[14px]">
+                                <div class="whitespace-nowrap flex items-center gap-1 leading-[130%]">
+                                  Segment Size
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M6.05967 6.00016C6.21641 5.55461 6.52578 5.1789 6.93298 4.93958C7.34018 4.70027 7.81894 4.61279 8.28446 4.69264C8.74998 4.77249 9.17222 5.01451 9.47639 5.37585C9.78057 5.73718 9.94705 6.19451 9.94634 6.66683C9.94634 8.00016 7.94634 8.66683 7.94634 8.66683M7.99967 11.3335H8.00634M14.6663 8.00016C14.6663 11.6821 11.6816 14.6668 7.99967 14.6668C4.31778 14.6668 1.33301 11.6821 1.33301 8.00016C1.33301 4.31826 4.31778 1.3335 7.99967 1.3335C11.6816 1.3335 14.6663 4.31826 14.6663 8.00016Z"
+                                      stroke="#AAABAC" stroke-width="1.33333" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                  </svg>
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M8.00033 2.6665C8.36852 2.6665 8.66699 2.96498 8.66699 3.33317V11.057L12.1956 7.52843C12.4559 7.26808 12.878 7.26808 13.1384 7.52843C13.3987 7.78878 13.3987 8.21089 13.1384 8.47124L8.47173 13.1379C8.21138 13.3983 7.78927 13.3983 7.52892 13.1379L2.86225 8.47124C2.6019 8.21089 2.6019 7.78878 2.86225 7.52843C3.1226 7.26808 3.54471 7.26808 3.80506 7.52843L7.33366 11.057V3.33317C7.33366 2.96498 7.63214 2.6665 8.00033 2.6665Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-row-1
+                              class="border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="flex items-center">
+                                  <svg data-row-icon-1 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform = Android
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-2
+                              class="hidden bg-[#F9FBFD] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[12px] flex items-center">
+                                  <svg data-row-icon-2 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android 10
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-3
+                              class="hidden bg-[#F4F6F8] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[48px] flex items-center">
+                                  <svg data-row-icon-3 class="hidden mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android Pie
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="ml-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        Phone brand=Samsung
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-3
+                              class="hidden bg-[#F4F6F8] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[48px] flex items-center">
+                                  <svg data-row-icon-3 class="hidden mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android Pie
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="ml-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        Phone brand=Samsung
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-2
+                              class="hidden bg-[#F9FBFD] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[12px] flex items-center">
+                                  <svg data-row-icon-2 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android 10
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-3
+                              class="hidden bg-[#F4F6F8] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[48px] flex items-center">
+                                  <svg data-row-icon-3 class="hidden mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android Pie
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="ml-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        Phone brand=Samsung
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-1
+                              class="border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="flex items-center">
+                                  <svg data-row-icon-1 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform = Android
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-2
+                              class="hidden bg-[#F9FBFD] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[12px] flex items-center">
+                                  <svg data-row-icon-2 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android 10
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-3
+                              class="hidden bg-[#F4F6F8] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[48px] flex items-center">
+                                  <svg data-row-icon-3 class="hidden mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android Pie
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="ml-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        Phone brand=Samsung
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-3
+                              class="hidden bg-[#F4F6F8] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[48px] flex items-center">
+                                  <svg data-row-icon-3 class="hidden mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android Pie
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="ml-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        Phone brand=Samsung
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-1
+                              class="border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="flex items-center">
+                                  <svg data-row-icon-1 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform = Android
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-2
+                              class="hidden bg-[#F9FBFD] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[12px] flex items-center">
+                                  <svg data-row-icon-2 class="mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android 10
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-row-3
+                              class="hidden bg-[#F4F6F8] border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
+                              <td class="whitespace-nowrap py-[16] px-6 text-[#35383B] text-[14px] leading-[140%]">
+                                <div class="pl-[48px] flex items-center">
+                                  <svg data-row-icon-3 class="hidden mr-4 cursor-pointer" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.91107 6.91058C5.23651 6.58514 5.76414 6.58514 6.08958 6.91058L10.5003 11.3213L14.9111 6.91058C15.2365 6.58514 15.7641 6.58514 16.0896 6.91058C16.415 7.23602 16.415 7.76366 16.0896 8.08909L11.0896 13.0891C10.7641 13.4145 10.2365 13.4145 9.91107 13.0891L4.91107 8.08909C4.58563 7.76366 4.58563 7.23602 4.91107 6.91058Z"
+                                      fill="#35383B" />
+                                  </svg>
+                                  <div class="w-full flex justify-between items-center">
+                                    <div class="flex mr-6">
+                                      <span
+                                        class="mr-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        majorOSVersion = Android Pie
+                                      </span>
+                                      and
+                                      <span
+                                        class="mx-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        platform=Android
+                                      </span>
+                                      and
+                                      <span
+                                        class="ml-[2px] py-[2px] px-2 inline-block text-[#2B3C6B] text-[12px] font-medium bg-[#F3F2FF] rounded-2xl">
+                                        Phone brand=Samsung
+                                      </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M2.16699 3.83333C2.16699 3.36662 2.16699 3.13327 2.25782 2.95501C2.33771 2.79821 2.4652 2.67072 2.622 2.59083C2.80026 2.5 3.03362 2.5 3.50033 2.5H17.5003C17.967 2.5 18.2004 2.5 18.3787 2.59083C18.5355 2.67072 18.6629 2.79821 18.7428 2.95501C18.8337 3.13327 18.8337 3.36662 18.8337 3.83333V4.39116C18.8337 4.61516 18.8337 4.72716 18.8063 4.8313C18.782 4.92359 18.7421 5.01103 18.6882 5.0898C18.6275 5.17869 18.5428 5.25204 18.3736 5.39875L13.0438 10.0179C12.8745 10.1646 12.7898 10.238 12.7291 10.3269C12.6752 10.4056 12.6353 10.4931 12.611 10.5854C12.5837 10.6895 12.5837 10.8015 12.5837 11.0255V15.382C12.5837 15.5449 12.5837 15.6264 12.5574 15.6969C12.5342 15.7591 12.4964 15.8149 12.4472 15.8596C12.3916 15.9102 12.3159 15.9404 12.1646 16.001L9.33125 17.1343C9.02497 17.2568 8.87182 17.3181 8.74889 17.2925C8.64138 17.2702 8.54704 17.2063 8.48637 17.1148C8.41699 17.0101 8.41699 16.8452 8.41699 16.5153V11.0255C8.41699 10.8015 8.41699 10.6895 8.38962 10.5854C8.36537 10.4931 8.32544 10.4056 8.27158 10.3269C8.21081 10.238 8.12617 10.1646 7.9569 10.0179L2.62708 5.39875C2.45781 5.25204 2.37318 5.17869 2.3124 5.0898C2.25855 5.01103 2.21862 4.92359 2.19436 4.8313C2.16699 4.72716 2.16699 4.61516 2.16699 4.39116V3.83333Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                      <button class="p-2 hover:bg-[#F3F2FF] ease-in-out duration-300 rounded-xl"
+                                        type="button">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M12.1663 9.1665H7.16634M8.83301 12.4998H7.16634M13.833 5.83317H7.16634M17.1663 8.74984V5.6665C17.1663 4.26637 17.1663 3.56631 16.8939 3.03153C16.6542 2.56112 16.2717 2.17867 15.8013 1.93899C15.2665 1.6665 14.5665 1.6665 13.1663 1.6665H7.83301C6.43288 1.6665 5.73281 1.6665 5.19803 1.93899C4.72763 2.17867 4.34517 2.56112 4.10549 3.03153C3.83301 3.56631 3.83301 4.26637 3.83301 5.6665V14.3332C3.83301 15.7333 3.83301 16.4334 4.10549 16.9681C4.34517 17.4386 4.72763 17.821 5.19803 18.0607C5.73281 18.3332 6.43288 18.3332 7.83301 18.3332H10.083M18.833 18.3332L17.583 17.0832M18.4163 14.9998C18.4163 16.6107 17.1105 17.9165 15.4997 17.9165C13.8888 17.9165 12.583 16.6107 12.583 14.9998C12.583 13.389 13.8888 12.0832 15.4997 12.0832C17.1105 12.0832 18.4163 13.389 18.4163 14.9998Z"
+                                            stroke="#445082" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                        fill="#F04438"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
+                                    <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                        fill="#12B76A"></path>
+                                    </svg>
+                                    20%
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="whitespace-nowrap p-6">
+                                <div class="flex items-center gap-3">
+                                  <div class="text-[#35383B] text-[14px]">61 139 vs 59 587</div>
+                                  <div
+                                    class="flex items-center font-medium text-[14px] px-3 py-[2px] rounded-[16px] bg-[#F4F6F8] text-[#2C2E30]">
+                                    -2,5 %
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

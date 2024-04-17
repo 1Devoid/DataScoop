@@ -22,6 +22,7 @@ import {
   chartValueDifference,
   waterfallChart,
 } from './modules/chart-init.js';
+import { openAccordion, openAccordion2 } from './modules/open-accordions.js';
 
 initTWE({ Collapse, Tab });
 showPassword('#password', '#password + #show-password');
@@ -45,3 +46,5 @@ showCustomizePopup();
 chartValueInit();
 chartValueDifference();
 waterfallChart();
+openAccordion();
+openAccordion2();
