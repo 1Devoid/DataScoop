@@ -17,6 +17,11 @@ import showSettings from './modules/show-settings.js';
 import showSharePopup from './modules/show-share-popup.js';
 import showContextPopups from './modules/show-context-popup.js';
 import showCustomizePopup from './modules/show-customize-popup.js';
+import {
+  chartValueInit,
+  chartValueDifference,
+  waterfallChart,
+} from './modules/chart-init.js';
 
 initTWE({ Collapse, Tab });
 showPassword('#password', '#password + #show-password');
@@ -37,3 +42,6 @@ showSettings();
 showSharePopup();
 showContextPopups();
 showCustomizePopup();
+chartValueInit();
+chartValueDifference();
+waterfallChart();
