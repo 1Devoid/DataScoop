@@ -6,6 +6,10 @@
   padding: 1px !important;
 }
 
+input[type='checkbox']::after {
+  display: none !important;
+}
+
 [multiple]:focus,
 [type='date']:focus,
 [type='datetime-local']:focus,

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/head.html', { 'title': 'Jupiter' })
+
+<body class="body">
+
+  <div class="wrapper">
+
+    @@include('html/header.html')
+
+    <main class="main">
+      <section class="pt-[32px]">
+        <div class="container-custom">
+          <!--Tabs navigation-->
+          <ul class="segments-tabs flex list-none flex-row flex-wrap border-b-0 ps-0" role="tablist" data-twe-nav-ref>
+            <li>
+              <a href="tabs-overview.html"
+                class="flex items-center justify-center w-[188px] border-b-2 p-4 text-[14px] font-medium leading-[140%] text-[#2B3C6B] border-b-[#7F8ACA] bg-[#FFFFFF] rounded-t-xl ease-in-out duration-300">
+                <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.6668 9.16699H6.66683M8.3335 12.5003H6.66683M13.3335 5.83366H6.66683M16.6668 8.75033V5.66699C16.6668 4.26686 16.6668 3.5668 16.3943 3.03202C16.1547 2.56161 15.7722 2.17916 15.3018 1.93948C14.767 1.66699 14.067 1.66699 12.6668 1.66699H7.3335C5.93336 1.66699 5.2333 1.66699 4.69852 1.93948C4.22811 2.17916 3.84566 2.56161 3.60598 3.03202C3.3335 3.5668 3.3335 4.26686 3.3335 5.66699V14.3337C3.3335 15.7338 3.3335 16.4339 3.60598 16.9686C3.84566 17.439 4.22811 17.8215 4.69852 18.0612C5.2333 18.3337 5.93336 18.3337 7.3335 18.3337H9.5835M18.3335 18.3337L17.0835 17.0837M17.9168 15.0003C17.9168 16.6112 16.611 17.917 15.0002 17.917C13.3893 17.917 12.0835 16.6112 12.0835 15.0003C12.0835 13.3895 13.3893 12.0837 15.0002 12.0837C16.611 12.0837 17.9168 13.3895 17.9168 15.0003Z"
+                    stroke="#2B3C6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Overview
+              </a>
+            </li>
+            <li>
+              <a href="tabs-drivers.html"
+                class="flex items-center justify-center w-[188px] border-b-2 border-b-[#E6E6E7] p-4 text-[14px] font-medium leading-[140%] text-[#828385] hover:border-[#7F8ACA] hover:bg-[#FFFFFF] rounded-t-xl ease-in-out duration-300">
+                <svg class="mr-2" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_468_35475)">
+                    <path
+                      d="M2.36621 9.99997L10.4014 14.0176C10.5107 14.0722 10.5654 14.0996 10.6227 14.1103C10.6735 14.1198 10.7256 14.1198 10.7764 14.1103C10.8337 14.0996 10.8884 14.0722 10.9977 14.0176L19.0329 9.99997M2.36621 14.1666L10.4014 18.1842C10.5107 18.2389 10.5654 18.2662 10.6227 18.277C10.6735 18.2865 10.7256 18.2865 10.7764 18.277C10.8337 18.2662 10.8884 18.2389 10.9977 18.1842L19.0329 14.1666M2.36621 5.83331L10.4014 1.81571C10.5107 1.76105 10.5654 1.73372 10.6227 1.72297C10.6735 1.71344 10.7256 1.71344 10.7764 1.72297C10.8337 1.73372 10.8884 1.76105 10.9977 1.81571L19.0329 5.83331L10.9977 9.8509C10.8884 9.90556 10.8337 9.93289 10.7764 9.94365C10.7256 9.95317 10.6735 9.95317 10.6227 9.94365C10.5654 9.93289 10.5107 9.90556 10.4014 9.8509L2.36621 5.83331Z"
+                      stroke="#828385" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_468_35475">
+                      <rect width="20" height="20" fill="white" transform="translate(0.699707)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Drivers
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="tabs-segments.html"
+                class="flex items-center justify-center w-[188px] border-b-2 border-b-[#E6E6E7] p-4 text-[14px] font-medium leading-[140%] text-[#828385] hover:border-[#7F8ACA] hover:bg-[#FFFFFF] rounded-t-xl ease-in-out duration-300">
+                <svg class="mr-2" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.8333 6.66667L18 2.5M18 2.5H13.8333M18 2.5V6.66667M7.16667 6.66667L3 2.5M3 2.5L3 6.66667M3 2.5L7.16667 2.5M7.16667 13.3333L3 17.5M3 17.5H7.16667M3 17.5L3 13.3333M13.8333 13.3333L18 17.5M18 17.5V13.3333M18 17.5H13.8333"
+                    stroke="#828385" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Segments
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="tabs-waterfall.html"
+                class="flex items-center justify-center w-[188px] border-b-2 border-b-[#E6E6E7] p-4 text-[14px] font-medium leading-[140%] text-[#828385] hover:border-[#7F8ACA] hover:bg-[#FFFFFF] rounded-t-xl ease-in-out duration-300">
+                <svg class="mr-2" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.2998 5.83333H4.63314C4.16643 5.83333 3.93307 5.83333 3.75481 5.92416C3.59801 6.00406 3.47053 6.13154 3.39063 6.28834C3.2998 6.4666 3.2998 6.69996 3.2998 7.16667V16.1667C3.2998 16.6334 3.2998 16.8667 3.39063 17.045C3.47053 17.2018 3.59801 17.3293 3.75481 17.4092C3.93307 17.5 4.16643 17.5 4.63314 17.5H8.2998M8.2998 17.5H13.2998M8.2998 17.5L8.2998 3.83333C8.2998 3.36662 8.2998 3.13327 8.39063 2.95501C8.47053 2.79821 8.59801 2.67072 8.75481 2.59083C8.93307 2.5 9.16643 2.5 9.63314 2.5L11.9665 2.5C12.4332 2.5 12.6665 2.5 12.8448 2.59083C13.0016 2.67072 13.1291 2.79821 13.209 2.95501C13.2998 3.13327 13.2998 3.36662 13.2998 3.83333V17.5M13.2998 9.16667H16.9665C17.4332 9.16667 17.6665 9.16667 17.8448 9.25749C18.0016 9.33739 18.1291 9.46487 18.209 9.62167C18.2998 9.79993 18.2998 10.0333 18.2998 10.5V16.1667C18.2998 16.6334 18.2998 16.8667 18.209 17.045C18.1291 17.2018 18.0016 17.3293 17.8448 17.4092C17.6665 17.5 17.4332 17.5 16.9665 17.5H13.2998"
+                    stroke="#828385" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Waterfall
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="tabs-narrative.html"
+                class="flex items-center justify-center w-[188px] border-b-2 border-b-[#E6E6E7] p-4 text-[14px] font-medium leading-[140%] text-[#828385] hover:border-[#7F8ACA] hover:bg-[#FFFFFF] rounded-t-xl ease-in-out duration-300">
+                <svg class="mr-2" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_468_35487)">
+                    <path
+                      d="M10.0999 17.5L10.0166 17.3749C9.43769 16.5066 9.14825 16.0725 8.76585 15.7582C8.42732 15.4799 8.03724 15.2712 7.61794 15.1438C7.14431 15 6.62253 15 5.57895 15H4.43327C3.49985 15 3.03314 15 2.67662 14.8183C2.36301 14.6586 2.10805 14.4036 1.94826 14.09C1.7666 13.7335 1.7666 13.2668 1.7666 12.3333V5.16667C1.7666 4.23325 1.7666 3.76654 1.94826 3.41002C2.10805 3.09641 2.36301 2.84144 2.67662 2.68166C3.03314 2.5 3.49985 2.5 4.43327 2.5H4.7666C6.63344 2.5 7.56686 2.5 8.2799 2.86331C8.90711 3.18289 9.41705 3.69282 9.73662 4.32003C10.0999 5.03307 10.0999 5.96649 10.0999 7.83333M10.0999 17.5V7.83333M10.0999 17.5L10.1833 17.3749C10.7622 16.5066 11.0516 16.0725 11.434 15.7582C11.7726 15.4799 12.1626 15.2712 12.5819 15.1438C13.0556 15 13.5773 15 14.6209 15H15.7666C16.7 15 17.1667 15 17.5233 14.8183C17.8369 14.6586 18.0918 14.4036 18.2516 14.09C18.4333 13.7335 18.4333 13.2668 18.4333 12.3333V5.16667C18.4333 4.23325 18.4333 3.76654 18.2516 3.41002C18.0918 3.09641 17.8369 2.84144 17.5233 2.68166C17.1667 2.5 16.7 2.5 15.7666 2.5H15.4333C13.5664 2.5 12.633 2.5 11.92 2.86331C11.2928 3.18289 10.7828 3.69282 10.4632 4.32003C10.0999 5.03307 10.0999 5.96649 10.0999 7.83333"
+                      stroke="#828385" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_468_35487">
+                      <rect width="20" height="20" fill="white" transform="translate(0.100098)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Narrative
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-[#ffffff] py-10 min-h-[80vh]">
+          <div class="container-custom">
+            <!--Tab header-->
+            <div class="flex justify-between items-center relative mb-10">
+              <div class="">
+                <a href="tabs-drivers.html" class="flex items-center mb-2">
+                  <svg class="mr-2" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M24.2561 16.4108C24.5815 16.7363 24.5815 17.2639 24.2561 17.5893L19.8453 22.0001L24.2561 26.4108C24.5815 26.7363 24.5815 27.2639 24.2561 27.5893C23.9306 27.9148 23.403 27.9148 23.0776 27.5893L18.0776 22.5893C17.7521 22.2639 17.7521 21.7363 18.0776 21.4108L23.0776 16.4108C23.403 16.0854 23.9306 16.0854 24.2561 16.4108Z"
+                      fill="#2C2E30" />
+                  </svg>
+                  <h1 class="text-[#1D2E54] text-[32px] font-semibold">Segment Detail</h1>
+                </a>
+                <div class="flex ml-[52px] gap-1">
+                  <span
+                    class="font-medium py-[2px] px-2 bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                    platform=Android
+                  </span>
+                  and
+                  <span
+                    class="font-medium py-[2px] px-2 bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                    majorOSVersion = Android 10
+                  </span>
+                </div>
+                <div class=""></div>
+              </div>
+              <div class="flex items-center gap-4">
+                <button
+                  class="bg-[#F3F2FF] hover:bg-[#D5D6FD] ease-in-out duration-300 rounded-xl w-[44px] h-[44px] flex justify-center items-center"
+                  type="button" id="settings-btn">
+                  <svg id="settings-btn-icon" class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_859_5144)">
+                      <path
+                        d="M9.99984 12.4998C11.3805 12.4998 12.4998 11.3805 12.4998 9.99984C12.4998 8.61913 11.3805 7.49984 9.99984 7.49984C8.61913 7.49984 7.49984 8.61913 7.49984 9.99984C7.49984 11.3805 8.61913 12.4998 9.99984 12.4998Z"
+                        stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.6059 12.2726C15.5051 12.5011 15.475 12.7545 15.5195 13.0003C15.5641 13.246 15.6812 13.4728 15.8559 13.6514L15.9014 13.6968C16.0422 13.8375 16.154 14.0046 16.2302 14.1886C16.3065 14.3725 16.3457 14.5697 16.3457 14.7688C16.3457 14.9679 16.3065 15.1651 16.2302 15.349C16.154 15.5329 16.0422 15.7 15.9014 15.8407C15.7606 15.9816 15.5935 16.0934 15.4096 16.1696C15.2257 16.2459 15.0285 16.2851 14.8294 16.2851C14.6303 16.2851 14.4331 16.2459 14.2492 16.1696C14.0652 16.0934 13.8981 15.9816 13.7574 15.8407L13.712 15.7953C13.5334 15.6206 13.3066 15.5035 13.0609 15.4589C12.8151 15.4144 12.5617 15.4444 12.3332 15.5453C12.1091 15.6413 11.918 15.8008 11.7834 16.004C11.6488 16.2073 11.5766 16.4455 11.5756 16.6892V16.818C11.5756 17.2199 11.416 17.6052 11.1318 17.8894C10.8477 18.1735 10.4623 18.3332 10.0604 18.3332C9.6586 18.3332 9.27322 18.1735 8.98907 17.8894C8.70492 17.6052 8.54529 17.2199 8.54529 16.818V16.7498C8.53943 16.4991 8.45826 16.2559 8.31235 16.0519C8.16643 15.8479 7.96252 15.6925 7.72711 15.6059C7.49861 15.5051 7.24515 15.475 6.99939 15.5195C6.75364 15.5641 6.52687 15.6812 6.34832 15.8559L6.30287 15.9014C6.16215 16.0422 5.99505 16.154 5.81111 16.2302C5.62717 16.3065 5.43001 16.3457 5.2309 16.3457C5.03178 16.3457 4.83462 16.3065 4.65069 16.2302C4.46675 16.154 4.29965 16.0422 4.15893 15.9014C4.01805 15.7606 3.9063 15.5935 3.83005 15.4096C3.7538 15.2257 3.71455 15.0285 3.71455 14.8294C3.71455 14.6303 3.7538 14.4331 3.83005 14.2492C3.9063 14.0652 4.01805 13.8981 4.15893 13.7574L4.20438 13.712C4.37903 13.5334 4.49619 13.3066 4.54075 13.0609C4.58531 12.8151 4.55523 12.5617 4.45438 12.3332C4.35835 12.1091 4.19889 11.918 3.99564 11.7834C3.79239 11.6488 3.55422 11.5766 3.31044 11.5756H3.18166C2.77981 11.5756 2.39443 11.416 2.11028 11.1318C1.82614 10.8477 1.6665 10.4623 1.6665 10.0604C1.6665 9.6586 1.82614 9.27322 2.11028 8.98907C2.39443 8.70492 2.77981 8.54529 3.18166 8.54529H3.24984C3.50059 8.53943 3.74378 8.45826 3.94779 8.31235C4.1518 8.16643 4.3072 7.96252 4.39378 7.72711C4.49462 7.49861 4.5247 7.24515 4.48014 6.99939C4.43558 6.75364 4.31843 6.52687 4.14378 6.34832L4.09832 6.30287C3.95745 6.16215 3.84569 5.99505 3.76944 5.81111C3.69319 5.62717 3.65395 5.43001 3.65395 5.2309C3.65395 5.03178 3.69319 4.83462 3.76944 4.65069C3.84569 4.46675 3.95745 4.29965 4.09832 4.15893C4.23904 4.01805 4.40614 3.9063 4.59008 3.83005C4.77402 3.7538 4.97118 3.71455 5.17029 3.71455C5.36941 3.71455 5.56657 3.7538 5.7505 3.83005C5.93444 3.9063 6.10154 4.01805 6.24226 4.15893L6.28772 4.20438C6.46626 4.37903 6.69303 4.49619 6.93879 4.54075C7.18454 4.58531 7.43801 4.55523 7.6665 4.45438H7.72711C7.95118 4.35835 8.14228 4.19889 8.27688 3.99564C8.41148 3.79239 8.48371 3.55422 8.48469 3.31044V3.18166C8.48469 2.77981 8.64432 2.39443 8.92846 2.11028C9.21261 1.82614 9.59799 1.6665 9.99984 1.6665C10.4017 1.6665 10.7871 1.82614 11.0712 2.11028C11.3554 2.39443 11.515 2.77981 11.515 3.18166V3.24984C11.516 3.49362 11.5882 3.73179 11.7228 3.93504C11.8574 4.13829 12.0485 4.29774 12.2726 4.39378C12.5011 4.49462 12.7545 4.5247 13.0003 4.48014C13.246 4.43558 13.4728 4.31843 13.6514 4.14378L13.6968 4.09832C13.8375 3.95745 14.0046 3.84569 14.1886 3.76944C14.3725 3.69319 14.5697 3.65395 14.7688 3.65395C14.9679 3.65395 15.1651 3.69319 15.349 3.76944C15.5329 3.84569 15.7 3.95745 15.8407 4.09832C15.9816 4.23904 16.0934 4.40614 16.1696 4.59008C16.2459 4.77402 16.2851 4.97118 16.2851 5.17029C16.2851 5.36941 16.2459 5.56657 16.1696 5.7505C16.0934 5.93444 15.9816 6.10154 15.8407 6.24226L15.7953 6.28772C15.6206 6.46626 15.5035 6.69303 15.4589 6.93879C15.4144 7.18454 15.4444 7.43801 15.5453 7.6665V7.72711C15.6413 7.95118 15.8008 8.14228 16.004 8.27688C16.2073 8.41148 16.4455 8.48371 16.6892 8.48469H16.818C17.2199 8.48469 17.6052 8.64432 17.8894 8.92846C18.1735 9.21261 18.3332 9.59799 18.3332 9.99984C18.3332 10.4017 18.1735 10.7871 17.8894 11.0712C17.6052 11.3554 17.2199 11.515 16.818 11.515H16.7498C16.5061 11.516 16.2679 11.5882 16.0646 11.7228C15.8614 11.8574 15.7019 12.0485 15.6059 12.2726Z"
+                        stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_859_5144">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg id="settings-btn-close" class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15M5 5L15 15" stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button
+                  class="bg-[#F3F2FF] hover:bg-[#D5D6FD] ease-in-out duration-300 rounded-xl w-[44px] h-[44px] flex justify-center items-center"
+                  type="button" id="download-btn">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5"
+                      stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button
+                  class="bg-[#F3F2FF] hover:bg-[#D5D6FD] ease-in-out duration-300 rounded-xl w-[44px] h-[44px] flex justify-center items-center"
+                  type="button" id="share-btn">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.15833 11.2582L12.85 14.5748M12.8417 5.42484L7.15833 8.7415M17.5 4.1665C17.5 5.54722 16.3807 6.6665 15 6.6665C13.6193 6.6665 12.5 5.54722 12.5 4.1665C12.5 2.78579 13.6193 1.6665 15 1.6665C16.3807 1.6665 17.5 2.78579 17.5 4.1665ZM7.5 9.99984C7.5 11.3805 6.38071 12.4998 5 12.4998C3.61929 12.4998 2.5 11.3805 2.5 9.99984C2.5 8.61913 3.61929 7.49984 5 7.49984C6.38071 7.49984 7.5 8.61913 7.5 9.99984ZM17.5 15.8332C17.5 17.2139 16.3807 18.3332 15 18.3332C13.6193 18.3332 12.5 17.2139 12.5 15.8332C12.5 14.4525 13.6193 13.3332 15 13.3332C16.3807 13.3332 17.5 14.4525 17.5 15.8332Z"
+                      stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button
+                  class="bg-[#F3F2FF] hover:bg-[#D5D6FD] ease-in-out duration-300 rounded-xl w-[44px] h-[44px] flex justify-center items-center"
+                  type="button" id="save-btn">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.83333 2.5V5.33333C5.83333 5.80004 5.83333 6.0334 5.92416 6.21166C6.00406 6.36846 6.13154 6.49594 6.28834 6.57584C6.4666 6.66667 6.69996 6.66667 7.16667 6.66667H12.8333C13.3 6.66667 13.5334 6.66667 13.7117 6.57584C13.8685 6.49594 13.9959 6.36846 14.0758 6.21166C14.1667 6.0334 14.1667 5.80004 14.1667 5.33333V3.33333M14.1667 17.5V12.1667C14.1667 11.7 14.1667 11.4666 14.0758 11.2883C13.9959 11.1315 13.8685 11.0041 13.7117 10.9242C13.5334 10.8333 13.3 10.8333 12.8333 10.8333H7.16667C6.69996 10.8333 6.4666 10.8333 6.28834 10.9242C6.13154 11.0041 6.00406 11.1315 5.92416 11.2883C5.83333 11.4666 5.83333 11.7 5.83333 12.1667V17.5M17.5 7.77124V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V6.5C2.5 5.09987 2.5 4.3998 2.77248 3.86502C3.01217 3.39462 3.39462 3.01217 3.86502 2.77248C4.3998 2.5 5.09987 2.5 6.5 2.5H12.2288C12.6364 2.5 12.8402 2.5 13.0321 2.54605C13.2021 2.58688 13.3647 2.65422 13.5138 2.7456C13.682 2.84867 13.8261 2.9928 14.1144 3.28105L16.719 5.88562C17.0072 6.17387 17.1513 6.318 17.2544 6.48619C17.3458 6.63531 17.4131 6.79789 17.4539 6.96795C17.5 7.15976 17.5 7.36358 17.5 7.77124Z"
+                      stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="accent-btn w-[156px] p-[10px] flex justify-center items-center" type="button"
+                  id="new-report">
+                  <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.0002 3.3335C10.4604 3.3335 10.8335 3.70659 10.8335 4.16683V9.16683H15.8335C16.2937 9.16683 16.6668 9.53993 16.6668 10.0002C16.6668 10.4604 16.2937 10.8335 15.8335 10.8335H10.8335V15.8335C10.8335 16.2937 10.4604 16.6668 10.0002 16.6668C9.53993 16.6668 9.16683 16.2937 9.16683 15.8335V10.8335H4.16683C3.70659 10.8335 3.3335 10.4604 3.3335 10.0002C3.3335 9.53993 3.70659 9.16683 4.16683 9.16683H9.16683V4.16683C9.16683 3.70659 9.53993 3.3335 10.0002 3.3335Z"
+                      fill="white" />
+                  </svg>
+                  New Report
+                </button>
+              </div>
+              <div id="settings-panel"
+                class="hidden absolute top-[66px] z-[1] p-4 w-full bg-[#F9FBFD] rounded-xl shadow-md border border-[#CACBCB] flex gap-4">
+                <!-- Panel's columns -->
+                <div class="border-r border-r-[#E6E6E7] pr-4 flex">
+                  <div class="">
+                    <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px] whitespace-nowrap">Base
+                      Date Range</div>
+                    <div date-rangepicker class="flex flex-col max-w-[184px]">
+                      <div class="relative mb-2">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z"
+                              stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <input name="start" type="text"
+                          class="w-[100%] h-[44px] text-[#828385] placeholder:text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] pl-10 px-[14px]"
+                          placeholder="Select date start">
+                      </div>
+                      <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z"
+                              stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <input name="end" type="text"
+                          class="w-[100%] h-[44px] text-[#828385] placeholder:text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] pl-10 px-[14px]"
+                          placeholder="Select date end">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="p-3 relative -top-3" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 5L5 15M5 5L15 15" stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="border-r border-r-[#E6E6E7] pr-4 flex">
+                  <div class="">
+                    <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px] whitespace-nowrap">
+                      Comparison Date Range
+                    </div>
+                    <div date-rangepicker class="flex flex-col max-w-[184px]">
+                      <div class="relative mb-2">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z"
+                              stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <input name="start" type="text"
+                          class="w-[100%] h-[44px] text-[#828385] placeholder:text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] pl-10 px-[14px]"
+                          placeholder="Select date start">
+                      </div>
+                      <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z"
+                              stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <input name="end" type="text"
+                          class="w-[100%] h-[44px] text-[#828385] placeholder:text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] pl-10 px-[14px]"
+                          placeholder="Select date end">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="p-3 relative -top-3" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 5L5 15M5 5L15 15" stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="border-r border-r-[#E6E6E7] pr-4 flex">
+                  <div class="">
+                    <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px] whitespace-nowrap">
+                      Dimensions
+                    </div>
+                    <div class="relative max-w-[184px]">
+                      <button data-rotate id="btn-group" data-dropdown-toggle="dd-group"
+                        class="whitespace-nowrap flex justify-start items-center w-[100%] h-[44px] text-[#828385] text-[16px] bg-[#FFFFFF] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                        type="button">
+                        <div class="flex items-center mr-2 gap-[6px]">
+                          <div class="flex items-center py-[2px] pl-2 pr-1 border border-[#AAABAC] rounded-[6px]">
+                            <span data-tag class="text-[#2C2E30] text-[14px] font-medium leading-[140%]">+6</span>
+                            <svg class="ml-1" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11.5 5L5.5 11M5.5 5L11.5 11" stroke="#828385" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        Enter tag
+                      </button>
+                      <!-- Dropdown menu -->
+                      <div data-dd-menu data-select-all-menu id="dd-group"
+                        class="z-10 hidden w-[300px] border border-[#E6E6E7] bg-white divide-y divide-gray-100 rounded-xl shadow dark:bg-gray-700">
+                        <ul class="py-2 pt-[6px] text-sm text-gray-700 dark:text-gray-200" aria-labelledby="btn-group">
+                          <li class="px-[6px] pb-[6px] border-b border-b-[#E6E6E7]">
+                            <div class="relative">
+                              <svg class="absolute top-[13px] left-[14px]" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z"
+                                  stroke="#828385" stroke-width="1.66667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                              <input
+                                class="w-[100%] placeholder:text-[#828385] border-[#AAABAC] border rounded-xl py-[10px] pl-[42px] px-[14px]"
+                                type="text" name="search" id="search" placeholder="Search">
+                            </div>
+                          </li>
+                          <li class="px-[6px] border-b border-b-[#E6E6E7]">
+                            <div data-dd-item
+                              class="flex justify-between items-center px-[8px] py-[10px] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                              <div class="flex items-center">
+                                <input data-select-all id="group-1" type="checkbox" value="" name="group"
+                                  class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                <label
+                                  class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                  for="group-1">Select All</label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="my-[2px] mx-[6px]">
+                            <div data-dd-item
+                              class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                              <div class="flex items-center">
+                                <input data-dd-checkbox id="group-2" type="checkbox" value="" name="group"
+                                  class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                <label
+                                  class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                  for="group-2">Country</label>
+                              </div>
+                              <div class="flex items-center">
+                                <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                  2 distinct values
+                                </div>
+                                <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="my-[2px] mx-[6px]">
+                            <div data-dd-item
+                              class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                              <div class="flex items-center">
+                                <input data-dd-checkbox id="group-3" type="checkbox" value="" name="group"
+                                  class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                <label
+                                  class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                  for="group-3">Gender</label>
+                              </div>
+                              <div class="flex items-center">
+                                <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                  7 distinct values
+                                </div>
+                                <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="my-[2px] mx-[6px]">
+                            <div data-dd-item
+                              class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                              <div class="flex items-center">
+                                <input data-dd-checkbox id="group-4" type="checkbox" value="" name="group"
+                                  class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                <label
+                                  class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                  for="group-4">Age</label>
+                              </div>
+                              <div class="flex items-center">
+                                <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                  45 distinct values
+                                </div>
+                                <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="my-[2px] mx-[6px]">
+                            <div data-dd-item
+                              class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                              <div class="flex items-center">
+                                <input data-dd-checkbox id="group-5" type="checkbox" value="" name="group"
+                                  class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                <label
+                                  class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                  for="group-5">Language</label>
+                              </div>
+                              <div class="flex items-center">
+                                <div class="text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                  5 distinct values
+                                </div>
+                                <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="p-3 relative -top-3" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 5L5 15M5 5L15 15" stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="border-r border-r-[#E6E6E7] pr-4 flex">
+                  <div class="">
+                    <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px] whitespace-nowrap">
+                      Filter
+                    </div>
+                    <div class="relative max-w-[184px]">
+                      <button data-rotate id="btn-filters" data-dropdown-toggle="dd-filters"
+                        class="whitespace-nowrap flex justify-between items-center w-[100%] text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                        type="button">
+                        <div class="flex items-center">
+                          <img class="w-[20px] h-[20px] mr-2" src="images/svg/filter.svg" alt="">
+                          Not selected
+                        </div>
+                        <svg class="ml-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.41083 6.91058C4.73626 6.58514 5.2639 6.58514 5.58934 6.91058L10.0001 11.3213L14.4108 6.91058C14.7363 6.58514 15.2639 6.58514 15.5893 6.91058C15.9148 7.23602 15.9148 7.76366 15.5893 8.08909L10.5893 13.0891C10.2639 13.4145 9.73626 13.4145 9.41083 13.0891L4.41083 8.08909C4.08539 7.76366 4.08539 7.23602 4.41083 6.91058Z"
+                            fill="#828385" />
+                        </svg>
+                      </button>
+                      <!-- Dropdown menu -->
+                      <div data-dd-menu id="dd-filters"
+                        class="z-10 hidden w-[320px] border border-[#E6E6E7] bg-white divide-y divide-gray-100 rounded-xl shadow dark:bg-gray-700">
+                        <div class="py-4 px-6" aria-labelledby="btn-filters">
+                          <div class="flex flex-col items-center gap-6 mb-6">
+                            <div class="w-full">
+                              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px]">Column</div>
+                              <button data-rotate id="btn-filters-column" data-dropdown-toggle="dd-filters-column"
+                                class="flex justify-between items-center w-[100%] text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                                type="button">Column
+                                <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.41083 6.91058C4.73626 6.58514 5.2639 6.58514 5.58934 6.91058L10.0001 11.3213L14.4108 6.91058C14.7363 6.58514 15.2639 6.58514 15.5893 6.91058C15.9148 7.23602 15.9148 7.76366 15.5893 8.08909L10.5893 13.0891C10.2639 13.4145 9.73626 13.4145 9.41083 13.0891L4.41083 8.08909C4.08539 7.76366 4.08539 7.23602 4.41083 6.91058Z"
+                                    fill="#828385" />
+                                </svg>
+                              </button>
+                              <!-- Dropdown menu -->
+                              <div data-dd-menu id="dd-filters-column"
+                                class="z-10 hidden w-[188px] border border-[#E6E6E7] bg-white divide-y divide-gray-100 rounded-xl shadow dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                  aria-labelledby="btn-filters-column">
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-column-1" type="checkbox" value=""
+                                          name="filters-column"
+                                          class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-column-1">Language</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-column-2" type="checkbox" value=""
+                                          name="filters-column"
+                                          class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-column-2">App Version</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-column-3" type="checkbox" value=""
+                                          name="filters-column"
+                                          class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-column-3">Country</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-column-4" type="checkbox" value=""
+                                          name="filters-column"
+                                          class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-column-4">Gender</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="w-full">
+                              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px]">Operator</div>
+                              <button data-rotate id="btn-filters-operator" data-dropdown-toggle="dd-filters-operator"
+                                class="flex justify-between items-center w-[100%] text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                                type="button">Operator
+                                <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.41083 6.91058C4.73626 6.58514 5.2639 6.58514 5.58934 6.91058L10.0001 11.3213L14.4108 6.91058C14.7363 6.58514 15.2639 6.58514 15.5893 6.91058C15.9148 7.23602 15.9148 7.76366 15.5893 8.08909L10.5893 13.0891C10.2639 13.4145 9.73626 13.4145 9.41083 13.0891L4.41083 8.08909C4.08539 7.76366 4.08539 7.23602 4.41083 6.91058Z"
+                                    fill="#828385" />
+                                </svg>
+                              </button>
+                              <!-- Dropdown menu -->
+                              <div data-dd-menu id="dd-filters-operator"
+                                class="z-10 hidden w-[188px] border border-[#E6E6E7] bg-white divide-y divide-gray-100 rounded-xl shadow dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                  aria-labelledby="btn-filters-operator">
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-operator-1" type="checkbox" value=""
+                                          name="filters-operator"
+                                          class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-operator-1">Not Equal</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-operator-2" type="checkbox" value=""
+                                          name="filters-operator"
+                                          class="hidden w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-operator-2">Equal</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="w-full">
+                              <div class="text-[#2C2E30] text-[14px] font-medium leading-[140%] mb-[6px]">Select group
+                                by columns</div>
+                              <button data-rotate id="btn-filters-values" data-dropdown-toggle="dd-filters-values"
+                                class="whitespace-nowrap flex justify-start items-center w-[100%] text-[#828385] text-[16px] border-[#AAABAC] focus:border-[#AAABAC] border rounded-xl py-[10px] px-[14px]"
+                                type="button">
+                                <div class="flex items-center gap-[6px] mr-2">
+                                  <div
+                                    class="flex items-center pl-2 border border-[#AAABAC] pr-1 py-[2px] rounded-[6px]">
+                                    <span data-tag=""
+                                      class="font-medium text-[14px] leading-[140%] text-[#2C2E30]">en</span>
+                                    <svg class="ml-1" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M11.5 5L5.5 11M5.5 5L11.5 11" stroke="#828385" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                  </div>
+                                  <div
+                                    class="flex items-center pl-2 border border-[#AAABAC] pr-1 py-[2px] rounded-[6px]">
+                                    <span data-tag=""
+                                      class="font-medium text-[14px] leading-[140%] text-[#2C2E30]">es</span>
+                                    <svg class="ml-1" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M11.5 5L5.5 11M5.5 5L11.5 11" stroke="#828385" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                                Enter tag
+                              </button>
+                              <!-- Dropdown menu -->
+                              <div data-dd-menu data-select-all-menu id="dd-filters-values"
+                                class="z-10 hidden w-[350px] border border-[#E6E6E7] bg-white divide-y divide-gray-100 rounded-xl shadow dark:bg-gray-700">
+                                <ul class="py-2 pt-[6px] text-sm text-gray-700 dark:text-gray-200"
+                                  aria-labelledby="btn-filters-values">
+                                  <li class="px-[6px] pb-[6px] border-b border-b-[#E6E6E7]">
+                                    <div class="relative">
+                                      <svg class="absolute top-[13px] left-[14px]" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                          d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z"
+                                          stroke="#828385" stroke-width="1.66667" stroke-linecap="round"
+                                          stroke-linejoin="round" />
+                                      </svg>
+                                      <input
+                                        class="w-[100%] placeholder:text-[#828385] border-[#AAABAC] border rounded-xl py-[10px] pl-[42px] px-[14px]"
+                                        type="text" name="search-values" id="search-values" placeholder="Search">
+                                    </div>
+                                  </li>
+                                  <li class="px-[6px] border-b border-b-[#E6E6E7]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-select-all id="filters-values-1" type="checkbox" value=""
+                                          name="filters-values"
+                                          class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-values-1">Select All</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-values-2" type="checkbox" value=""
+                                          name="filters-values"
+                                          class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-values-2">cn</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          2 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-values-3" type="checkbox" value=""
+                                          name="filters-values"
+                                          class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-values-3">en</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          7 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-values-4" type="checkbox" value=""
+                                          name="filters-values"
+                                          class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-values-4">es</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          45 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="my-[2px] mx-[6px]">
+                                    <div data-dd-item
+                                      class="flex justify-between items-center px-[8px] py-[10px] hover:bg-[#F3F2FF] rounded-[6px] text-[#1F2022] text-[16px] font-medium leading-[150%]">
+                                      <div class="flex items-center">
+                                        <input data-dd-checkbox id="filters-values-5" type="checkbox" value=""
+                                          name="filters-values"
+                                          class="w-[20px] h-[20px] mr-4 text-[#445082] bg-[#ffffff] border-[#AAABAC] rounded-[6px] cursor-pointer">
+                                        <label
+                                          class="text-[#1F2022] text-[16px] font-medium leading-[150%] cursor-pointer select-none"
+                                          for="filters-values-5">gr</label>
+                                      </div>
+                                      <div class="flex items-center">
+                                        <div class="hidden text-[#828385] text-[14px] font-medium leading-[140%] mr-2">
+                                          5 distinct values
+                                        </div>
+                                        <svg data-dd-icon class="hidden" width="20" height="20" viewBox="0 0 20 20"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#445082"
+                                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            class="w-full p-2 flex justify-center items-center text-[#445082] hover:text-[#1D2E54] text-[14px] font-semibold leading-[140%]"
+                            type="button">
+                            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 3.3335C10.4603 3.3335 10.8334 3.70659 10.8334 4.16683V9.16683H15.8334C16.2936 9.16683 16.6667 9.53993 16.6667 10.0002C16.6667 10.4604 16.2936 10.8335 15.8334 10.8335H10.8334V15.8335C10.8334 16.2937 10.4603 16.6668 10 16.6668C9.5398 16.6668 9.16671 16.2937 9.16671 15.8335V10.8335H4.16671C3.70647 10.8335 3.33337 10.4604 3.33337 10.0002C3.33337 9.53993 3.70647 9.16683 4.16671 9.16683H9.16671V4.16683C9.16671 3.70659 9.5398 3.3335 10 3.3335Z"
+                                fill="#35383B" />
+                            </svg>
+                            Add New
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="p-3 relative -top-3" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 5L5 15M5 5L15 15" stroke="#B0B5EF" stroke-width="1.66667" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button
+                    class="w-[116px] h-[44px] p-[10px] text-[16px] font-semibold leading-[150%] rounded-xl bg-[#F3F2FF] hover:bg-[#D5D6FD] text-[#2B3C6B] hover:text-[#1D2E54] ease-in-out duration-300"
+                    type="button">Reset</button>
+                  <button class="accent-btn w-[116px] h-[44px] p-[10px]" type="button">Rerun</button>
+                </div>
+              </div>
+            </div>
+            <!--Tabs content-->
+            <div class="">
+              <!-- Table -->
+              <div class="flex flex-col mb-10">
+                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                    <div class="overflow-hidden border border-[#E6E6E7] rounded-[20px]">
+                      <table class="bg-[#F9FBFD] min-w-full text-left text-sm font-light text-surface dark:text-white">
+                        <thead class="text-[#35383B] text-[14px] leading-[140%] border-b border-[#E6E6E7] bg-[#F4F6F8]">
+                          <tr>
+                            <th scope="col" class="w-[328px] px-6 py-4"></th>
+                            <th scope="col" class="px-6 py-3 font-medium">Period</th>
+                            <th scope="col" class="px-6 py-3 font-medium">Rows</th>
+                            <th scope="col" class="px-6 py-3 font-medium">DISTINCT User ID</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="text-[#35383B] text-[16px] leading-[150%] border-b border-[#E6E6E7] font-normal">
+                            <td class="whitespace-nowrap p-6 text-[#445082]">Base</td>
+                            <td class="whitespace-nowrap p-6">Jan 4, 2022 to Jul 4,2023</td>
+                            <td class="whitespace-nowrap p-6">
+                              <div class="flex items-center gap-3">
+                                <div class="">142 188</div>
+                                <div
+                                  class="hidden flex items-center text-[#B42318] text-[14px] font-medium py-[2px] px-2 bg-[#FEF3F2] rounded-[16px]">
+                                  <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                      fill="#F04438" />
+                                  </svg>
+                                  -1 000 (-0.80%)
+                                </div>
+                              </div>
+                            </td>
+                            <td class="whitespace-nowrap p-6">
+                              <div class="flex items-center gap-3">
+                                <div class="">101 320</div>
+                                <div
+                                  class="hidden flex items-center text-[#027A48] text-[14px] font-medium py-[2px] px-2 bg-[#ECFDF3] rounded-[16px]">
+                                  <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                      fill="#12B76A" />
+                                  </svg>
+                                  -1 000 (-0.80%)
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="text-[#35383B] text-[16px] leading-[150%] border-b border-[#E6E6E7] font-normal">
+                            <td class="whitespace-nowrap p-6 text-[#6E4A95]">Comparison</td>
+                            <td class="whitespace-nowrap p-6">Jan 4, 2022 to Jul 4,2023</td>
+                            <td class="whitespace-nowrap p-6">
+                              <div class="flex items-center gap-3">
+                                <div class="">142 188</div>
+                                <div
+                                  class="flex items-center text-[#B42318] text-[14px] font-medium py-[2px] px-2 bg-[#FEF3F2] rounded-[16px]">
+                                  <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M6.5 2C6.77614 2 7 2.22386 7 2.5V8.29289L9.64645 5.64645C9.84171 5.45118 10.1583 5.45118 10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.85355 9.85355C6.65829 10.0488 6.34171 10.0488 6.14645 9.85355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.84171 5.45118 3.15829 5.45118 3.35355 5.64645L6 8.29289V2.5C6 2.22386 6.22386 2 6.5 2Z"
+                                      fill="#F04438" />
+                                  </svg>
+                                  -1 000 (-0.80%)
+                                </div>
+                              </div>
+                            </td>
+                            <td class="whitespace-nowrap p-6">
+                              <div class="flex items-center gap-3">
+                                <div class="">101 320</div>
+                                <div
+                                  class="flex items-center text-[#027A48] text-[14px] font-medium py-[2px] px-2 bg-[#ECFDF3] rounded-[16px]">
+                                  <svg class="mr-1" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M6.14645 2.14645C6.34171 1.95118 6.65829 1.95118 6.85355 2.14645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355C10.1583 6.54882 9.84171 6.54882 9.64645 6.35355L7 3.70711V9.5C7 9.77614 6.77614 10 6.5 10C6.22386 10 6 9.77614 6 9.5V3.70711L3.35355 6.35355C3.15829 6.54882 2.84171 6.54882 2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645L6.14645 2.14645Z"
+                                      fill="#12B76A" />
+                                  </svg>
+                                  -1 000 (-0.80%)
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Chart -->
+              <div class="mb-10 rounded-[28px] border border-[#E6E6E7] shadow-md p-6 w-full">
+                <div class="mb-6">
+                  <h3 class="text-[#1D2E54] text-[20px] font-semibold leading-[130%] mb-6">Day by Day Value</h3>
+                  <div
+                    class="max-w-[127px] text-[#2B3C6B] text-[14px] font-semibold pb-2 border-b-2 border-b-[#445082]">
+                    DISTINCT User ID
+                  </div>
+                </div>
+                <canvas class="max-h-[240px]" id="myChartValue"></canvas>
+              </div>
+              <!-- Info -->
+              <div class="mb-[32px] rounded-[28px] border border-[#E6E6E7] shadow-md w-full">
+                <div class="p-6">
+                  <div class="pb-6 flex justify-between items-center gap-4">
+                    <div class="">
+                      <div class="text-[#1D2E54] text-[20px] font-semibold leading-[130%] mb-2">Other Segments under the
+                        Same
+                        Dimension(s)
+                      </div>
+                      <div class="text-[#828385] text-[14px] mb-2">Showing segments with
+                        under dimension(s):</div>
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                          platform=Android
+                        </span>
+                        <span
+                          class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                          platform=Android
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <input
+                          class="relative float-left mt-[0.15rem] pl-[1xp] pt-[1px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border border-solid border-[#AAABAC] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-[#445082] checked:bg-[#445082] checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ms-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12]  focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:after:-mt-px checked:focus:after:ms-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent rtl:float-right"
+                          type="checkbox" value="" id="remember-30" />
+                        <span
+                          class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                          majorOSVersion = Android 10
+                        </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <input
+                          class="relative float-left mt-[0.15rem] pl-[1xp] pt-[1px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border border-solid border-[#AAABAC] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-[#445082] checked:bg-[#445082] checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ms-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12]  focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:after:-mt-px checked:focus:after:ms-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent rtl:float-right"
+                          type="checkbox" value="" id="remember-30" />
+                        <span
+                          class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                          platform=Android
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-6 text-[#2B3C6B] text-[16px] font-medium leading-[150%] border-t border-t-[#E6E6E7]">
+                    Metrics: DISTINCT User ID
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 bg-[#F4F6F8] border-y border-y-[#E6E6E7]">
+                  <div class="py-[14px] px-6 text-[#35383B] text-[12px] font-medium leading-[130%]">Segment</div>
+                  <div
+                    class="py-[14px] px-6 text-[#35383B] text-[12px] font-medium leading-[130%] flex items-center gap-1">
+                    DISTINCT User ID
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.00033 2.6665C8.36852 2.6665 8.66699 2.96498 8.66699 3.33317V11.057L12.1956 7.52843C12.4559 7.26808 12.878 7.26808 13.1384 7.52843C13.3987 7.78878 13.3987 8.21089 13.1384 8.47124L8.47173 13.1379C8.21138 13.3983 7.78927 13.3983 7.52892 13.1379L2.86225 8.47124C2.6019 8.21089 2.6019 7.78878 2.86225 7.52843C3.1226 7.26808 3.54471 7.26808 3.80506 7.52843L7.33366 11.057V3.33317C7.33366 2.96498 7.63214 2.6665 8.00033 2.6665Z"
+                        fill="#35383B"></path>
+                    </svg>
+                  </div>
+                </div>
+                <!-- Top rows -->
+                <div class="grid grid-cols-2 border-b border-b-[#E6E6E7]">
+                  <div class="p-6">
+                    <span
+                      class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                      platform=Android
+                    </span>
+                  </div>
+                  <div class="p-6 flex items-center gap-3">
+                    <div class="text-[#12B76A] text-[14px] font-medium whitespace-nowrap">+379 (+1,56%)</div>
+                    <div class="flex items-center gap-[2px]">
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 end-0 bg-[#12B76A] rounded-[4px] w-[0%] h-[8px]"></div>
+                      </div>
+                      <div class="w-3 h-3 rounded-full bg-[#AAABAC]"></div>
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 bg-[#12B76A] rounded-[4px] w-[60%] h-[8px]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 border-b border-b-[#E6E6E7]">
+                  <div class="p-6">
+                    <div class="flex gap-1">
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                        platform=Android
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        majorOSVersion = Android 10
+                      </span>
+                    </div>
+                  </div>
+                  <div class="p-6 flex justify-between justify-between items-center gap-3">
+                    <div class="text-[#12B76A] text-[14px] font-medium whitespace-nowrap">+350 (+2,99%)</div>
+                    <div class="flex items-center gap-[2px]">
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 end-0 bg-[#12B76A] rounded-[4px] w-[0%] h-[8px]"></div>
+                      </div>
+                      <div class="w-3 h-3 rounded-full bg-[#AAABAC]"></div>
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 bg-[#12B76A] rounded-[4px] w-[40%] h-[8px]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2">
+                  <div class="p-6">
+                    <div class="flex gap-1">
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                        majorOSVersion = Android Pie
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        platform=Android
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        Phone brand=Samsung
+                      </span>
+                    </div>
+                  </div>
+                  <div class="p-6 flex justify-between items-center gap-3">
+                    <div class="text-[#12B76A] text-[14px] font-medium whitespace-nowrap">+234 (+1,99%)</div>
+                    <div class="flex items-center gap-[2px]">
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 end-0 bg-[#12B76A] rounded-[4px] w-[0%] h-[8px]"></div>
+                      </div>
+                      <div class="w-3 h-3 rounded-full bg-[#AAABAC]"></div>
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 bg-[#12B76A] rounded-[4px] w-[20%] h-[8px]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Middle row -->
+                <div class="grid grid-cols-2 justify-center border-y border-y-[#E6E6E7]">
+                  <div
+                    class="text-[#828385] text-[16px] text-right leading-[150%] border-r border-r-[#E6E6E7] px-4 py-2">
+                    Showing 6 of 22 segments
+                  </div>
+                  <button
+                    class="text-left text-[14px] leading-[140%] font-semibold hover:text-[#1D2E54] text-[#445082] border-r border-r-[#E6E6E7] px-[50px] py-[10px]"
+                    type="button">
+                    Show All
+                  </button>
+                </div>
+                <!-- Bottom row -->
+                <div class="grid grid-cols-2 border-b border-b-[#E6E6E7]">
+                  <div class="p-6">
+                    <div class="flex gap-1">
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                        majorOSVersion = Android Pie
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        platform=Android
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        Phone brand=Samsung
+                      </span>
+                    </div>
+                  </div>
+                  <div class="p-6 flex justify-between items-center gap-3">
+                    <div class="text-[#F04438] text-[14px] font-medium whitespace-nowrap">-10 (-0,2%)</div>
+                    <div class="flex items-center gap-[2px]">
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 end-0 bg-[#F04438] rounded-[4px] w-[5%] h-[8px]"></div>
+                      </div>
+                      <div class="w-3 h-3 rounded-full bg-[#AAABAC]"></div>
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 bg-[#F04438] rounded-[4px] w-[0%] h-[8px]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 border-b border-b-[#E6E6E7]">
+                  <div class="p-6">
+                    <div class="flex gap-1">
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                        majorOSVersion = Android Pie
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        platform=Android
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        Phone brand=Samsung
+                      </span>
+                    </div>
+                  </div>
+                  <div class="p-6 flex justify-between items-center gap-3">
+                    <div class="text-[#F04438] text-[14px] font-medium whitespace-nowrap">-20 (-0,4%)</div>
+                    <div class="flex items-center gap-[2px]">
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 end-0 bg-[#F04438] rounded-[4px] w-[10%] h-[8px]"></div>
+                      </div>
+                      <div class="w-3 h-3 rounded-full bg-[#AAABAC]"></div>
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 bg-[#F04438] rounded-[4px] w-[0%] h-[8px]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2">
+                  <div class="p-6">
+                    <div class="flex gap-1">
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mr-[2px]">
+                        majorOSVersion = Android Pie
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        platform=Android
+                      </span>
+                      and
+                      <span
+                        class="font-medium px-2 py-[2px] bg-[#F3F2FF] inline-block rounded-2xl text-[#2B3C6B] text-[12px] mx-[2px]">
+                        Phone brand=Samsung
+                      </span>
+                    </div>
+                    <div class="text-[#B42318] text-[14px] font-medium leading-[140%] mt-1">(Current segment)</div>
+                  </div>
+                  <div class="p-6 flex justify-between items-center gap-3">
+                    <div class="text-[#F04438] text-[14px] font-medium whitespace-nowrap">-420 (-10,4%)</div>
+                    <div class="flex items-center gap-[2px]">
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 end-0 bg-[#F04438] rounded-[4px] w-[20%] h-[8px]"></div>
+                      </div>
+                      <div class="w-3 h-3 rounded-full bg-[#AAABAC]"></div>
+                      <div class="relative bg-[#E6E6E7] rounded-[4px] w-[239px] h-[8px]">
+                        <div class="absolute top-0 bg-[#F04438] rounded-[4px] w-[0%] h-[8px]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Share popup -->
+    <div id="share-popup" tabindex="-1"
+      class="hidden flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 z-50 w-full md:inset-0 h-modal md:h-full bg-[#82838580]">
+      <div class="accent-block relative p-10 w-full max-w-[640px] mx-4">
+        <button class="absolute top-2 end-2 p-4" id="close-share-popup" type="button">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7517 1L1.75171 11M1.75171 1L11.7517 11" stroke="#2B3C6B" stroke-width="1.66667"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class=" flex flex-col items-center">
+          <div class="text-[#1D2E54] text-[32px] font-semibold leading-[120%] mb-6">Share Analysis</div>
+          <div class="w-full">
+            <div class="flex items-end gap-2 pb-6 border-b border-b-[#E6E6E7]">
+              <div class="relative w-full">
+                <label class="text-[14px] font-medium inline-block text-[#2C2E30] mb-[6px]" for="email">Add
+                  Email</label>
+                <input class="border border-[#AAABAC] rounded-xl px-[14px] pl-[42px] py-[9px] w-[100%]" type="email"
+                  name="email" id="email" placeholder="Enter your Email">
+                <svg class="absolute bottom-[12px] left-[14px]" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9165 15L12.3808 10M7.61889 10L2.0832 15M1.6665 5.83337L8.4706 10.5962C9.02158 10.9819 9.29707 11.1748 9.59672 11.2495C9.86142 11.3154 10.1383 11.3154 10.403 11.2495C10.7026 11.1748 10.9781 10.9819 11.5291 10.5962L18.3332 5.83337M5.6665 16.6667H14.3332C15.7333 16.6667 16.4334 16.6667 16.9681 16.3942C17.4386 16.1545 17.821 15.7721 18.0607 15.3017C18.3332 14.7669 18.3332 14.0668 18.3332 12.6667V7.33337C18.3332 5.93324 18.3332 5.23318 18.0607 4.6984C17.821 4.22799 17.4386 3.84554 16.9681 3.60586C16.4334 3.33337 15.7333 3.33337 14.3332 3.33337H5.6665C4.26637 3.33337 3.56631 3.33337 3.03153 3.60586C2.56112 3.84554 2.17867 4.22799 1.93899 4.6984C1.6665 5.23318 1.6665 5.93324 1.6665 7.33337V12.6667C1.6665 14.0668 1.6665 14.7669 1.93899 15.3017C2.17867 15.7721 2.56112 16.1545 3.03153 16.3942C3.56631 16.6667 4.26637 16.6667 5.6665 16.6667Z"
+                    stroke="#AAABAC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <button id="share-popup-submit"
+                class="text-[16px] leading-[140%] duration-300 ease-in-out font-semibold h-[44px] py-[10px] rounded-xl w-[120px] bg-[#445082] hover:bg-[#2b3c6b] text-[#ffffff]"
+                type="button">
+                Submit
+              </button>
+            </div>
+            <div class="pt-6 flex justify-between items-center gap-4">
+              <button
+                class="py-[10px] flex items text-[#2B3C6B] hover:text-[#1D2E54] text-[16px] font-semibold leading-[140%]"
+                type="button">
+                <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.3332 17.5V15.8333C18.3332 14.2801 17.2709 12.9751 15.8332 12.605M12.9165 2.7423C14.1381 3.23679 14.9998 4.43443 14.9998 5.83333C14.9998 7.23224 14.1381 8.42988 12.9165 8.92437M14.1665 17.5C14.1665 15.9469 14.1665 15.1703 13.9128 14.5577C13.5745 13.741 12.9255 13.092 12.1088 12.7537C11.4962 12.5 10.7196 12.5 9.1665 12.5H6.6665C5.11337 12.5 4.3368 12.5 3.72423 12.7537C2.90747 13.092 2.25855 13.741 1.92024 14.5577C1.6665 15.1703 1.6665 15.9469 1.6665 17.5M11.2498 5.83333C11.2498 7.67428 9.75745 9.16667 7.9165 9.16667C6.07555 9.16667 4.58317 7.67428 4.58317 5.83333C4.58317 3.99238 6.07555 2.5 7.9165 2.5C9.75745 2.5 11.2498 3.99238 11.2498 5.83333Z"
+                    stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Public to Users Team
+              </button>
+              <button
+                class="w-[120px] h-[44px] p-[10px] text-[16px] font-semibold leading-[150%] rounded-xl bg-[#F3F2FF] hover:bg-[#D5D6FD] text-[#2B3C6B] hover:text-[#1D2E54] ease-in-out duration-300"
+                type="button">Copy Link</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  @@include('html/script.html')
+</body>
+
+</html>

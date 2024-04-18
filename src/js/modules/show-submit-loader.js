@@ -7,6 +7,9 @@ function showSubmitLoader() {
       submitLoader.classList.toggle('hidden');
       setTimeout(function () {
         submitLoader.classList.toggle('hidden');
+
+        // Redirect logic for demonstration flow
+        window.location.href = 'http://localhost:3000/tabs-overview.html';
       }, 2000);
     });
   }
