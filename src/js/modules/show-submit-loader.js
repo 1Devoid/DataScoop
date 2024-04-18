@@ -9,7 +9,8 @@ function showSubmitLoader() {
         submitLoader.classList.toggle('hidden');
 
         // Redirect logic for demonstration flow
-        window.location.href = 'http://datascoop.io/tabs-overview.html';
+        window.location.href =
+          'https://1devoid.github.io/DataScoop/tabs-overview.html';
       }, 2000);
     });
   }
