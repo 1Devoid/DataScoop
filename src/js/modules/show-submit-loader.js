@@ -9,7 +9,7 @@ function showSubmitLoader() {
         submitLoader.classList.toggle('hidden');
 
         // Redirect logic for demonstration flow
-        window.location.href = 'http://localhost:3000/tabs-overview.html';
+        window.location.href = 'http://datascoop.io/tabs-overview.html';
       }, 2000);
     });
   }
