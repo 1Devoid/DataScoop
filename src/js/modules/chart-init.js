@@ -89,7 +89,8 @@ function chartValueInit() {
               color: '#2B3C6B',
               font: {
                 size: 14,
-                weight: 'bold',
+                weight: 600,
+                family: "'Inter', sans-serif",
               },
             },
           },
@@ -170,7 +171,8 @@ function chartValueDifference() {
               color: '#2B3C6B',
               font: {
                 size: 14,
-                weight: 'bold',
+                weight: 600,
+                family: "'Inter', sans-serif",
               },
             },
           },
