@@ -7,9 +7,9 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240418163028" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240418163028" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240418163028">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240419125656" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240419125656" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240419125656">
   <title>Jupiter</title>
 </head>
 
@@ -152,7 +152,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="report-type-1" type="checkbox" value="" name="report-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="report-type-1" type="radio" value="" name="report-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="report-type-1">Date Range Comparison Report</label>
                         </div>
                         <div class="flex items-center">
@@ -168,7 +168,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="report-type-2" type="checkbox" value="" name="report-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="report-type-2" type="radio" value="" name="report-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="report-type-2">Date Range Comparison Report</label>
                         </div>
                         <div class="flex items-center">
@@ -184,7 +184,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="report-type-3" type="checkbox" value="" name="report-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="report-type-3" type="radio" value="" name="report-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="report-type-3">Date Range Comparison Report</label>
                         </div>
                         <div class="flex items-center">
@@ -239,12 +239,11 @@
                       </defs>
                     </svg>
                   </div>
-
                 </button>
                 <div class="mt-2 text-[#35383B] text-[14px]">
                   <span class="font-medium">E.g. 2020-04-13.</span>
                   See supported format
-                  <a href="#" class="text-[#7F8ACA] underline underline-offset-2">here</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format" target="_blank" class="text-[#7F8ACA] underline underline-offset-2">here</a>
                 </div>
                 
                 <div data-dd-menu id="dd-date-column" class="hidden bg-white border border-[#E6E6E7] dark:bg-gray-700 divide-gray-100 divide-y rounded-xl shadow z-10 w-full">
@@ -252,7 +251,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="date-column-1" type="checkbox" value="" name="date-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="date-column-1" type="radio" value="" name="date-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="date-column-1">Event Time</label>
                         </div>
                         <div class="flex items-center">
@@ -268,7 +267,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="date-column-2" type="checkbox" value="" name="date-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="date-column-2" type="radio" value="" name="date-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="date-column-2">Event Time</label>
                         </div>
                         <div class="flex items-center">
@@ -284,7 +283,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="date-column-3" type="checkbox" value="" name="date-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="date-column-3" type="radio" value="" name="date-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="date-column-3">Event Time</label>
                         </div>
                         <div class="flex items-center">
@@ -350,7 +349,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="date-compare-1" type="checkbox" value="" name="date-compare" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="date-compare-1" type="radio" value="" name="date-compare" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="date-compare-1">Date Range Comparison Report</label>
                         </div>
                         <div class="flex items-center">
@@ -366,7 +365,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="date-compare-2" type="checkbox" value="" name="date-compare" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="date-compare-2" type="radio" value="" name="date-compare" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="date-compare-2">Date Range Comparison Report</label>
                         </div>
                         <div class="flex items-center">
@@ -382,7 +381,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="date-compare-3" type="checkbox" value="" name="date-compare" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="date-compare-3" type="radio" value="" name="date-compare" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="date-compare-3">Date Range Comparison Report</label>
                         </div>
                         <div class="flex items-center">
@@ -439,7 +438,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-type-1" type="checkbox" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-type-1" type="radio" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-type-1">Sum</label>
                         </div>
                         <div class="flex items-center">
@@ -455,7 +454,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-type-2" type="checkbox" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-type-2" type="radio" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-type-2">Count</label>
                         </div>
                         <div class="flex items-center">
@@ -471,7 +470,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-type-3" type="checkbox" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-type-3" type="radio" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-type-3">Distinct</label>
                         </div>
                         <div class="flex items-center">
@@ -487,7 +486,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-type-4" type="checkbox" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-type-4" type="radio" value="" name="metric-type" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-type-4">Ratio</label>
                         </div>
                         <div class="flex items-center">
@@ -522,7 +521,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-column-1" type="checkbox" value="" name="metric-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-column-1" type="radio" value="" name="metric-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-column-1">User ID</label>
                         </div>
                         <div class="flex items-center">
@@ -538,7 +537,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-column-2" type="checkbox" value="" name="metric-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-column-2" type="radio" value="" name="metric-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-column-2">User ID</label>
                         </div>
                         <div class="flex items-center">
@@ -554,7 +553,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-column-3" type="checkbox" value="" name="metric-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-column-3" type="radio" value="" name="metric-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-column-3">User ID</label>
                         </div>
                         <div class="flex items-center">
@@ -605,7 +604,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-direction-1" type="checkbox" value="" name="metric-direction" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-direction-1" type="radio" value="" name="metric-direction" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-direction-1">Increasing</label>
                         </div>
                         <div class="flex items-center">
@@ -621,7 +620,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-direction-2" type="checkbox" value="" name="metric-direction" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-direction-2" type="radio" value="" name="metric-direction" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-direction-2">Increasing</label>
                         </div>
                         <div class="flex items-center">
@@ -637,7 +636,7 @@
                     <li class="mx-[6px] my-[2px]">
                       <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                         <div class="flex items-center">
-                          <input data-dd-checkbox id="metric-direction-3" type="checkbox" value="" name="metric-direction" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                          <input data-dd-checkbox id="metric-direction-3" type="radio" value="" name="metric-direction" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                           <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="metric-direction-3">Increasing</label>
                         </div>
                         <div class="flex items-center">
@@ -820,7 +819,7 @@
                             <li class="mx-[6px] my-[2px]">
                               <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                 <div class="flex items-center">
-                                  <input data-dd-checkbox id="filters-column-1" type="checkbox" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                  <input data-dd-checkbox id="filters-column-1" type="radio" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                                   <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="filters-column-1">Language</label>
                                 </div>
                                 <div class="flex items-center">
@@ -836,7 +835,7 @@
                             <li class="mx-[6px] my-[2px]">
                               <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                 <div class="flex items-center">
-                                  <input data-dd-checkbox id="filters-column-2" type="checkbox" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                  <input data-dd-checkbox id="filters-column-2" type="radio" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                                   <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="filters-column-2">App Version</label>
                                 </div>
                                 <div class="flex items-center">
@@ -852,7 +851,7 @@
                             <li class="mx-[6px] my-[2px]">
                               <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                 <div class="flex items-center">
-                                  <input data-dd-checkbox id="filters-column-3" type="checkbox" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                  <input data-dd-checkbox id="filters-column-3" type="radio" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                                   <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="filters-column-3">Country</label>
                                 </div>
                                 <div class="flex items-center">
@@ -868,7 +867,7 @@
                             <li class="mx-[6px] my-[2px]">
                               <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                 <div class="flex items-center">
-                                  <input data-dd-checkbox id="filters-column-4" type="checkbox" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                  <input data-dd-checkbox id="filters-column-4" type="radio" value="" name="filters-column" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                                   <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="filters-column-4">Gender</label>
                                 </div>
                                 <div class="flex items-center">
@@ -898,7 +897,7 @@
                             <li class="mx-[6px] my-[2px]">
                               <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                 <div class="flex items-center">
-                                  <input data-dd-checkbox id="filters-operator-1" type="checkbox" value="" name="filters-operator" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                  <input data-dd-checkbox id="filters-operator-1" type="radio" value="" name="filters-operator" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                                   <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="filters-operator-1">Not Equal</label>
                                 </div>
                                 <div class="flex items-center">
@@ -914,7 +913,7 @@
                             <li class="mx-[6px] my-[2px]">
                               <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                 <div class="flex items-center">
-                                  <input data-dd-checkbox id="filters-operator-2" type="checkbox" value="" name="filters-operator" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                  <input data-dd-checkbox id="filters-operator-2" type="radio" value="" name="filters-operator" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                                   <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none" for="filters-operator-2">Equal</label>
                                 </div>
                                 <div class="flex items-center">
@@ -1113,7 +1112,7 @@
                         <li class="mx-[6px] my-[2px]">
                           <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                             <div class="flex items-center">
-                              <input data-dd-checkbox id="dimensions-1" type="checkbox" value="" name="dimensions" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                              <input data-dd-checkbox id="dimensions-1" type="radio" value="" name="dimensions" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                               <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none inline-block min-w-[100px]" for="dimensions-1">1</label>
                             </div>
                             <div class="flex items-center">
@@ -1129,7 +1128,7 @@
                         <li class="mx-[6px] my-[2px]">
                           <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                             <div class="flex items-center">
-                              <input data-dd-checkbox id="dimensions-2" type="checkbox" value="" name="dimensions" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                              <input data-dd-checkbox id="dimensions-2" type="radio" value="" name="dimensions" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                               <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none inline-block min-w-[100px]" for="dimensions-2">2</label>
                             </div>
                             <div class="flex items-center">
@@ -1145,7 +1144,7 @@
                         <li class="mx-[6px] my-[2px]">
                           <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                             <div class="flex items-center">
-                              <input data-dd-checkbox id="dimensions-3" type="checkbox" value="" name="dimensions" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                              <input data-dd-checkbox id="dimensions-3" type="radio" value="" name="dimensions" class="hidden bg-[#ffffff] border-[#AAABAC] cursor-pointer h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
                               <label class="font-medium text-[#1F2022] text-[16px] leading-[150%] cursor-pointer select-none inline-block min-w-[100px]" for="dimensions-3">3</label>
                             </div>
                             <div class="flex items-center">
@@ -1218,11 +1217,11 @@
 
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240418163028"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240418163028"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240418163028"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240418163028"></script>
-<script src="js/app.min.js?_v=20240418163028"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240419125656"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240419125656"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240419125656"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240419125656"></script>
+<script src="js/app.min.js?_v=20240419125656"></script>
 </body>
 
 </html>
