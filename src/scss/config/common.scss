@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -146,59 +147,17 @@ header {
   height: calc(100vh - 64px);
 }
 
-.white-shadow {
-  position: relative;
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 30px;
-  }
-  &::before {
-    left: 0;
-    background: #ffffff;
-    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
-    background: -webkit-linear-gradient(
-      90deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 90%
-    );
-    background: -moz-linear-gradient(
-      90deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 90%
-    );
-  }
-  &::after {
-    right: 0;
-    background: #ffffff;
-    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
-    background: -webkit-linear-gradient(
-      270deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 90%
-    );
-    background: -moz-linear-gradient(
-      270deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 90%
-    );
-  }
-}
-
 .left-blinking-text {
   animation: left-slide 120s linear infinite;
   @media (max-width: 640px) {
-    animation: left-slide-mobile 120s linear infinite;
+    animation: left-slide 70s linear infinite;
   }
 }
 
 .right-blinking-text {
-  animation: right-slide 120s linear infinite;
+  animation: right-slide 200s linear infinite;
   @media (max-width: 640px) {
-    animation: right-slide-mobile 120s linear infinite;
+    animation: right-slide 80s linear infinite;
   }
 }
 

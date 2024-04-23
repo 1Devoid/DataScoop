@@ -24,6 +24,8 @@ import {
 } from './modules/chart-init.js';
 import { openAccordion, openAccordion2 } from './modules/open-accordions.js';
 import toggleBurgerMenu from './modules/toggle-burger-menu.js';
+import handleMobileLinkClick from './modules/handle-mobile-link-click.js';
+import setupSwipe from './modules/setup-swipe.js';
 
 initTWE({ Collapse, Tab, Carousel });
 showPassword('#password', '#password + #show-password');
@@ -51,3 +53,5 @@ openAccordion();
 openAccordion2();
 checkRadio();
 toggleBurgerMenu();
+handleMobileLinkClick();
+setupSwipe();
