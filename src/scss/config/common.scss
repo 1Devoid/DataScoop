@@ -189,16 +189,16 @@ header {
 }
 
 .left-blinking-text {
-  animation: left-slide 40s linear infinite;
+  animation: left-slide 120s linear infinite;
   @media (max-width: 640px) {
-    animation: left-slide-mobile 40s linear infinite;
+    animation: left-slide-mobile 120s linear infinite;
   }
 }
 
 .right-blinking-text {
-  animation: right-slide 40s linear infinite;
+  animation: right-slide 120s linear infinite;
   @media (max-width: 640px) {
-    animation: right-slide-mobile 40s linear infinite;
+    animation: right-slide-mobile 120s linear infinite;
   }
 }
 
