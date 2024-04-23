@@ -1,6 +1,6 @@
 'use strict';
 
-import { Collapse, Tab, initTWE } from 'tw-elements';
+import { Collapse, Tab, Carousel, initTWE } from 'tw-elements';
 import showPassword from './modules/show-password.js';
 import secureNums from './modules/secure-nums.js';
 import showVideoPopup from './modules/show-video-popup.js';
@@ -23,8 +23,9 @@ import {
   waterfallChart,
 } from './modules/chart-init.js';
 import { openAccordion, openAccordion2 } from './modules/open-accordions.js';
+import toggleBurgerMenu from './modules/toggle-burger-menu.js';
 
-initTWE({ Collapse, Tab });
+initTWE({ Collapse, Tab, Carousel });
 showPassword('#password', '#password + #show-password');
 showPassword('#new-password', '#new-password + #show-password');
 showPassword('#confirm-new-password', '#confirm-new-password + #show-password');
@@ -49,3 +50,4 @@ waterfallChart();
 openAccordion();
 openAccordion2();
 checkRadio();
+toggleBurgerMenu();

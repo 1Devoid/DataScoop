@@ -40,6 +40,9 @@ header {
     rgba(176, 181, 239, 0.15) 0%,
     #ffffff 100%
   );
+  &--landing {
+    background: none;
+  }
   // font-variant-numeric: lining-nums;
 }
 
@@ -136,4 +139,69 @@ header {
   &:last-child::after {
     display: none;
   }
+}
+
+.burger-menu {
+  box-shadow: inset 0 5px 5px rgba(16, 24, 40, 0.15);
+  height: calc(100vh - 64px);
+}
+
+.white-shadow {
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+  }
+  &::before {
+    left: 0;
+    background: #ffffff;
+    background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: -webkit-linear-gradient(
+      0deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 90%
+    );
+    background: -moz-linear-gradient(
+      0deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 90%
+    );
+  }
+  &::after {
+    right: 0;
+    background: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: -webkit-linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 90%
+    );
+    background: -moz-linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 90%
+    );
+  }
+}
+
+.left-blinking-text {
+  animation: left-slide 40s linear infinite;
+  @media (max-width: 640px) {
+    animation: left-slide-mobile 40s linear infinite;
+  }
+}
+
+.right-blinking-text {
+  animation: right-slide 40s linear infinite;
+  @media (max-width: 640px) {
+    animation: right-slide-mobile 40s linear infinite;
+  }
+}
+
+.submit-loader {
+  animation: spin 1s linear infinite;
 }

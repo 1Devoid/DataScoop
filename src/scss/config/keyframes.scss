@@ -2,11 +2,48 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.submit-loader {
-  animation: spin 1s linear infinite;
+@keyframes left-slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+@keyframes left-slide-mobile {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes right-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+@keyframes right-slide-mobile {
+  0% {
+    transform: translateX(-400%);
+  }
+
+  100% {
+    transform: translateX(300%);
+  }
 }
