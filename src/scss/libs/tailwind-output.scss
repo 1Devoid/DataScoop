@@ -1863,16 +1863,16 @@ input[type="range"]:active::-webkit-slider-thumb {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.\!transform-none {
-  -webkit-transform: none !important;
-      -ms-transform: none !important;
-          transform: none !important;
-}
-
 .transform-none {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+}
+
+.\!transform-none {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important;
 }
 
 .cursor-pointer {
@@ -4374,10 +4374,6 @@ span.focused.bg-blue-700 {
 }
 
 @media (min-width: 1280px) {
-  .xl\:fixed {
-    position: fixed;
-  }
-
   .xl\:mb-4 {
     margin-bottom: 1rem;
   }
