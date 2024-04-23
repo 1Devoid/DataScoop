@@ -159,14 +159,14 @@ header {
   &::before {
     left: 0;
     background: #ffffff;
-    background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
     background: -webkit-linear-gradient(
-      0deg,
+      90deg,
       #ffffff 0%,
       rgba(255, 255, 255, 0) 90%
     );
     background: -moz-linear-gradient(
-      0deg,
+      90deg,
       #ffffff 0%,
       rgba(255, 255, 255, 0) 90%
     );
@@ -174,14 +174,14 @@ header {
   &::after {
     right: 0;
     background: #ffffff;
-    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
     background: -webkit-linear-gradient(
-      180deg,
+      270deg,
       #ffffff 0%,
       rgba(255, 255, 255, 0) 90%
     );
     background: -moz-linear-gradient(
-      180deg,
+      270deg,
       #ffffff 0%,
       rgba(255, 255, 255, 0) 90%
     );
