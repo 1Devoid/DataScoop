@@ -1869,12 +1869,6 @@ input[type="range"]:active::-webkit-slider-thumb {
           transform: none;
 }
 
-.\!transform-none {
-  -webkit-transform: none !important;
-      -ms-transform: none !important;
-          transform: none !important;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
