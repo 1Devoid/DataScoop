@@ -1,5 +1,5 @@
 function saveAsPdf() {
-  const saveBtn = document.querySelector('#save-btn');
+  const saveBtn = document.querySelector('#download-btn');
   if (saveBtn) {
     saveBtn.addEventListener('click', () => {
       const element = document.body;

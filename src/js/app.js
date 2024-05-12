@@ -28,6 +28,7 @@ import handleMobileLinkClick from './modules/handle-mobile-link-click.js';
 import setupSwipe from './modules/setup-swipe.js';
 import updateBtnText from './modules/update-btn-text.js';
 import saveAsPdf from './modules/save-as-pdf.js';
+import showSavePopup from './modules/show-save-popup.js';
 
 initTWE({ Collapse, Tab, Carousel });
 showPassword('#password', '#password + #show-password');
@@ -67,3 +68,4 @@ updateBtnText('input[name="filters-column"]', 'btn-filters-column');
 updateBtnText('input[name="filters-operator"]', 'btn-filters-operator');
 updateBtnText('input[name="dimensions"]', 'btn-dimensions');
 saveAsPdf();
+showSavePopup();
