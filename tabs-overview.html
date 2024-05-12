@@ -7,9 +7,9 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240508144550" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240508144550" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240508144550">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240512094915" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240512094915" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240512094915">
   <title>Jupiter</title>
 </head>
 
@@ -48,7 +48,7 @@
         <nav class="flex items-center justify-between flex-wrap w-full relative" data-twe-navbar-ref>
           <div class="flex items-center justify-between flex-wrap w-full px-3">
             
-            <div class="border-[#E6E6E7] border min-w-[240px] h-[56px] px-[16px] relative rounded-2xl" id="user-dropdown-wrap" data-twe-dropdown-ref>
+            <div class="border border-[#E6E6E7] min-w-[240px] h-[56px] px-[16px] relative rounded-2xl" id="user-dropdown-wrap" data-twe-dropdown-ref>
               <a class="flex items-center active:text-black/80 dark:active:text-white/80 dark:focus:text-white/80 dark:hover:text-white/80 dark:text-white/60 duration-100 focus:text-black/80 h-full hover:ease-in-out hover:text-black/80 motion-reduce:transition-none text-black/60 transition whitespace-nowrap" href="#" id="user-dropdown-link" role="button" data-twe-dropdown-toggle-ref aria-expanded="false">
                 <img class="h-[32px] mr-[10px] rounded-full w-[32px]" src="images/avatar.png" alt="Avatar" loading="lazy">
                 <div class="font-semibold text-[14px] mr-[65px] text-[#2C2E30]">Olivia Rhye</div>
@@ -78,7 +78,7 @@
       <section class="pt-[32px]">
         <div class="container-custom">
           
-          <ul class="flex flex-wrap border-b-0 flex-row list-none ps-0 segments-tabs" role="tablist" data-twe-nav-ref>
+          <ul class="flex border-b-0 flex-row flex-wrap list-none ps-0 segments-tabs" role="tablist" data-twe-nav-ref>
             <li>
               <a href="tabs-overview.html" class="flex items-center font-medium text-[14px] border-b-2 duration-300 ease-in-out justify-center leading-[140%] p-4 rounded-t-xl w-[188px] bg-[#FFFFFF] border-b-[#7F8ACA] text-[#2B3C6B]">
                 <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +179,7 @@
                   New Report
                 </a>
               </div>
-              <div id="settings-panel" class="flex p-4 absolute bg-[#F9FBFD] border border-[#CACBCB] gap-4 hidden rounded-xl shadow-md top-[52px] w-full z-[1]">
+              <div id="settings-panel" class="flex w-full hidden absolute bg-[#F9FBFD] border border-[#CACBCB] gap-4 p-4 rounded-xl shadow-md top-[52px] z-[1]">
                 
                 <div class="flex border-r border-r-[#E6E6E7] pr-4">
                   <div class="">
@@ -192,7 +192,7 @@
                             <path d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z" stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
                         </div>
-                        <input name="start" type="text" class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date start">
+                        <input name="start" type="text" class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date start">
                       </div>
                       <div class="relative">
                         <div class="flex items-center absolute inset-y-0 pointer-events-none ps-3 start-0">
@@ -200,7 +200,7 @@
                             <path d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z" stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
                         </div>
-                        <input name="end" type="text" class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date end">
+                        <input name="end" type="text" class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date end">
                       </div>
                     </div>
                   </div>
@@ -222,7 +222,7 @@
                             <path d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z" stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
                         </div>
-                        <input name="start" type="text" class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date start">
+                        <input name="start" type="text" class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date start">
                       </div>
                       <div class="relative">
                         <div class="flex items-center absolute inset-y-0 pointer-events-none ps-3 start-0">
@@ -230,7 +230,7 @@
                             <path d="M17.5 8.33329H2.5M13.3333 1.66663V4.99996M6.66667 1.66663V4.99996M6.5 18.3333H13.5C14.9001 18.3333 15.6002 18.3333 16.135 18.0608C16.6054 17.8211 16.9878 17.4387 17.2275 16.9683C17.5 16.4335 17.5 15.7334 17.5 14.3333V7.33329C17.5 5.93316 17.5 5.2331 17.2275 4.69832C16.9878 4.22791 16.6054 3.84546 16.135 3.60578C15.6002 3.33329 14.9001 3.33329 13.5 3.33329H6.5C5.09987 3.33329 4.3998 3.33329 3.86502 3.60578C3.39462 3.84546 3.01217 4.22791 2.77248 4.69832C2.5 5.2331 2.5 5.93316 2.5 7.33329V14.3333C2.5 15.7334 2.5 16.4335 2.77248 16.9683C3.01217 17.4387 3.39462 17.8211 3.86502 18.0608C4.3998 18.3333 5.09987 18.3333 6.5 18.3333Z" stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
                         </div>
-                        <input name="end" type="text" class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date end">
+                        <input name="end" type="text" class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[10px] focus:border-[#AAABAC] text-[#828385] text-[16px] h-[44px] pl-10 placeholder:text-[#828385]" placeholder="Select date end">
                       </div>
                     </div>
                   </div>
@@ -265,13 +265,13 @@
                               <svg class="absolute left-[14px] top-[13px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z" stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg>
-                              <input class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] py-[10px] placeholder:text-[#828385] pl-[42px]" type="text" name="search" id="search" placeholder="Search">
+                              <input class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[10px] placeholder:text-[#828385] pl-[42px]" type="text" name="search" id="search" placeholder="Search">
                             </div>
                           </li>
                           <li class="border-b border-b-[#E6E6E7] px-[6px]">
                             <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022]">
                               <div class="flex items-center">
-                                <input data-select-all id="group-1" type="checkbox" value="" name="group" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                <input data-select-all id="group-1" type="checkbox" value="" name="group" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                 <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="group-1">Select All</label>
                               </div>
                             </div>
@@ -279,7 +279,7 @@
                           <li class="mx-[6px] my-[2px]">
                             <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                               <div class="flex items-center">
-                                <input data-dd-checkbox id="group-2" type="checkbox" value="" name="group" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                <input data-dd-checkbox id="group-2" type="checkbox" value="" name="group" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                 <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="group-2">Country</label>
                               </div>
                               <div class="flex items-center">
@@ -295,7 +295,7 @@
                           <li class="mx-[6px] my-[2px]">
                             <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                               <div class="flex items-center">
-                                <input data-dd-checkbox id="group-3" type="checkbox" value="" name="group" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                <input data-dd-checkbox id="group-3" type="checkbox" value="" name="group" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                 <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="group-3">Gender</label>
                               </div>
                               <div class="flex items-center">
@@ -311,7 +311,7 @@
                           <li class="mx-[6px] my-[2px]">
                             <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                               <div class="flex items-center">
-                                <input data-dd-checkbox id="group-4" type="checkbox" value="" name="group" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                <input data-dd-checkbox id="group-4" type="checkbox" value="" name="group" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                 <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="group-4">Age</label>
                               </div>
                               <div class="flex items-center">
@@ -327,7 +327,7 @@
                           <li class="mx-[6px] my-[2px]">
                             <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                               <div class="flex items-center">
-                                <input data-dd-checkbox id="group-5" type="checkbox" value="" name="group" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                <input data-dd-checkbox id="group-5" type="checkbox" value="" name="group" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                 <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="group-5">Language</label>
                               </div>
                               <div class="flex items-center">
@@ -519,13 +519,13 @@
                                       <svg class="absolute left-[14px] top-[13px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z" stroke="#828385" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                       </svg>
-                                      <input class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] py-[10px] placeholder:text-[#828385] pl-[42px]" type="text" name="search-values" id="search-values" placeholder="Search">
+                                      <input class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[10px] placeholder:text-[#828385] pl-[42px]" type="text" name="search-values" id="search-values" placeholder="Search">
                                     </div>
                                   </li>
                                   <li class="border-b border-b-[#E6E6E7] px-[6px]">
                                     <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022]">
                                       <div class="flex items-center">
-                                        <input data-select-all id="filters-values-1" type="checkbox" value="" name="filters-values" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                        <input data-select-all id="filters-values-1" type="checkbox" value="" name="filters-values" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                         <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="filters-values-1">Select All</label>
                                       </div>
                                     </div>
@@ -533,7 +533,7 @@
                                   <li class="mx-[6px] my-[2px]">
                                     <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                       <div class="flex items-center">
-                                        <input data-dd-checkbox id="filters-values-2" type="checkbox" value="" name="filters-values" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                        <input data-dd-checkbox id="filters-values-2" type="checkbox" value="" name="filters-values" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                         <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="filters-values-2">cn</label>
                                       </div>
                                       <div class="flex items-center">
@@ -549,7 +549,7 @@
                                   <li class="mx-[6px] my-[2px]">
                                     <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                       <div class="flex items-center">
-                                        <input data-dd-checkbox id="filters-values-3" type="checkbox" value="" name="filters-values" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                        <input data-dd-checkbox id="filters-values-3" type="checkbox" value="" name="filters-values" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                         <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="filters-values-3">en</label>
                                       </div>
                                       <div class="flex items-center">
@@ -565,7 +565,7 @@
                                   <li class="mx-[6px] my-[2px]">
                                     <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                       <div class="flex items-center">
-                                        <input data-dd-checkbox id="filters-values-4" type="checkbox" value="" name="filters-values" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                        <input data-dd-checkbox id="filters-values-4" type="checkbox" value="" name="filters-values" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                         <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="filters-values-4">es</label>
                                       </div>
                                       <div class="flex items-center">
@@ -581,7 +581,7 @@
                                   <li class="mx-[6px] my-[2px]">
                                     <div data-dd-item class="flex items-center justify-between py-[10px] text-[16px] font-medium leading-[150%] px-[8px] rounded-[6px] text-[#1F2022] hover:bg-[#F3F2FF]">
                                       <div class="flex items-center">
-                                        <input data-dd-checkbox id="filters-values-5" type="checkbox" value="" name="filters-values" class="cursor-pointer bg-[#ffffff] border-[#AAABAC] h-[20px] mr-4 rounded-[6px] text-[#445082] w-[20px]">
+                                        <input data-dd-checkbox id="filters-values-5" type="checkbox" value="" name="filters-values" class="border-[#AAABAC] rounded-[6px] bg-[#ffffff] cursor-pointer h-[20px] mr-4 text-[#445082] w-[20px]">
                                         <label class="font-medium text-[16px] leading-[150%] text-[#1F2022] cursor-pointer select-none" for="filters-values-5">gr</label>
                                       </div>
                                       <div class="flex items-center">
@@ -615,7 +615,7 @@
                   </button>
                 </div>
                 <div class="flex items-center gap-2">
-                  <button class="font-semibold text-[#2B3C6B] hover:text-[#1D2E54] text-[16px] bg-[#F3F2FF] duration-300 ease-in-out h-[44px] hover:bg-[#D5D6FD] leading-[150%] p-[10px] rounded-xl w-[116px]" type="button">Reset</button>
+                  <button class="font-semibold text-[16px] duration-300 ease-in-out h-[44px] rounded-xl bg-[#F3F2FF] hover:bg-[#D5D6FD] hover:text-[#1D2E54] leading-[150%] p-[10px] text-[#2B3C6B] w-[116px]" type="button">Reset</button>
                   <button class="p-[10px] h-[44px] w-[116px] accent-btn" type="button">Rerun</button>
                 </div>
               </div>
@@ -624,7 +624,7 @@
             <div class="">
               
               <div class="flex items-center justify-between gap-8 mb-[32px]">
-                <div class="w-full border shadow-md border-[#E6E6E7] p-6 max-w-[304px] min-h-[170px] rounded-[20px]">
+                <div class="border border-[#E6E6E7] p-6 shadow-md w-full max-w-[304px] min-h-[170px] rounded-[20px]">
                   <div class="flex items-center justify-between gap-3 mb-6">
                     <div class="flex items-center font-semibold leading-[130%] text-[#2C2E30] text-[20px]">
                       <svg class="mr-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -638,7 +638,7 @@
                     DISTINCT User ID
                   </div>
                 </div>
-                <div class="w-full border shadow-md border-[#E6E6E7] p-6 max-w-[304px] min-h-[170px] rounded-[20px]">
+                <div class="border border-[#E6E6E7] p-6 shadow-md w-full max-w-[304px] min-h-[170px] rounded-[20px]">
                   <div class="flex items-center justify-between gap-3 mb-6">
                     <div class="flex items-center font-semibold leading-[130%] text-[#2C2E30] text-[20px]">
                       <svg class="mr-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -652,7 +652,7 @@
                     age, country, gender, language, majorOsVersion, phoneBrand, platform
                   </div>
                 </div>
-                <div class="w-full border shadow-md border-[#E6E6E7] p-6 max-w-[304px] min-h-[170px] rounded-[20px]">
+                <div class="border border-[#E6E6E7] p-6 shadow-md w-full max-w-[304px] min-h-[170px] rounded-[20px]">
                   <div class="flex items-center justify-between gap-3 mb-6">
                     <div class="flex items-center font-semibold leading-[130%] text-[#2C2E30] text-[20px]">
                       <svg class="mr-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -666,7 +666,7 @@
                     -None-
                   </div>
                 </div>
-                <div class="w-full border shadow-md border-[#E6E6E7] p-6 max-w-[304px] min-h-[170px] rounded-[20px]">
+                <div class="border border-[#E6E6E7] p-6 shadow-md w-full max-w-[304px] min-h-[170px] rounded-[20px]">
                   <div class="flex items-center justify-between gap-3 mb-6">
                     <div class="flex items-center font-semibold leading-[130%] text-[#2C2E30] text-[20px]">
                       <svg class="mr-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -688,9 +688,9 @@
               <div class="flex flex-col mb-[32px]">
                 <div class="lg:-mx-8 overflow-x-auto sm:-mx-6">
                   <div class="py-2 inline-block lg:px-8 min-w-full sm:px-6">
-                    <div class="border-[#E6E6E7] border rounded-[20px] overflow-hidden">
+                    <div class="border border-[#E6E6E7] rounded-[20px] overflow-hidden">
                       <table class="text-sm bg-[#F9FBFD] dark:text-white font-light min-w-full text-left text-surface">
-                        <thead class="border-[#E6E6E7] border-b text-[#35383B] bg-[#F4F6F8] leading-[140%] text-[14px]">
+                        <thead class="border-b border-[#E6E6E7] text-[#35383B] bg-[#F4F6F8] leading-[140%] text-[14px]">
                           <tr>
                             <th scope="col" class="px-6 py-4 w-[328px]"></th>
                             <th scope="col" class="font-medium px-6 py-3">Period</th>
@@ -699,10 +699,10 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
-                            <td class="whitespace-nowrap p-6 text-[#445082]">Base</td>
-                            <td class="whitespace-nowrap p-6">Jan 4, 2022 to Jul 4,2023</td>
-                            <td class="whitespace-nowrap p-6">
+                          <tr class="border-b border-[#E6E6E7] text-[#35383B] font-normal leading-[150%] text-[16px]">
+                            <td class="p-6 whitespace-nowrap text-[#445082]">Base</td>
+                            <td class="p-6 whitespace-nowrap">Jan 4, 2022 to Jul 4,2023</td>
+                            <td class="p-6 whitespace-nowrap">
                               <div class="flex items-center gap-3">
                                 <div class="">142 188</div>
                                 <div class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318] hidden">
@@ -713,7 +713,7 @@
                                 </div>
                               </div>
                             </td>
-                            <td class="whitespace-nowrap p-6">
+                            <td class="p-6 whitespace-nowrap">
                               <div class="flex items-center gap-3">
                                 <div class="">101 320</div>
                                 <div class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48] hidden">
@@ -725,10 +725,10 @@
                               </div>
                             </td>
                           </tr>
-                          <tr class="border-[#E6E6E7] border-b text-[#35383B] font-normal leading-[150%] text-[16px]">
-                            <td class="whitespace-nowrap p-6 text-[#6E4A95]">Comparison</td>
-                            <td class="whitespace-nowrap p-6">Jan 4, 2022 to Jul 4,2023</td>
-                            <td class="whitespace-nowrap p-6">
+                          <tr class="border-b border-[#E6E6E7] text-[#35383B] font-normal leading-[150%] text-[16px]">
+                            <td class="p-6 whitespace-nowrap text-[#6E4A95]">Comparison</td>
+                            <td class="p-6 whitespace-nowrap">Jan 4, 2022 to Jul 4,2023</td>
+                            <td class="p-6 whitespace-nowrap">
                               <div class="flex items-center gap-3">
                                 <div class="">142 188</div>
                                 <div class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#FEF3F2] text-[#B42318]">
@@ -739,7 +739,7 @@
                                 </div>
                               </div>
                             </td>
-                            <td class="whitespace-nowrap p-6">
+                            <td class="p-6 whitespace-nowrap">
                               <div class="flex items-center gap-3">
                                 <div class="">101 320</div>
                                 <div class="flex items-center font-medium text-[14px] px-2 py-[2px] rounded-[16px] bg-[#ECFDF3] text-[#027A48]">
@@ -758,7 +758,7 @@
                 </div>
               </div>
               
-              <div class="w-full border shadow-md border-[#E6E6E7] p-6 mb-[32px] rounded-[28px]">
+              <div class="border border-[#E6E6E7] p-6 shadow-md w-full mb-[32px] rounded-[28px]">
                 <div class="mb-6">
                   <h3 class="font-semibold leading-[130%] text-[20px] mb-6 text-[#1D2E54]">Day by Day Value</h3>
                   <div class="font-semibold text-[#2B3C6B] border-b-2 border-b-[#445082] max-w-[127px] pb-2 text-[14px]">
@@ -768,7 +768,7 @@
                 <canvas class="max-h-[240px]" id="myChartValue"></canvas>
               </div>
               
-              <div class="w-full border shadow-md border-[#E6E6E7] p-6 mb-[32px] rounded-[28px]">
+              <div class="border border-[#E6E6E7] p-6 shadow-md w-full mb-[32px] rounded-[28px]">
                 <div class="mb-6">
                   <h3 class="font-semibold leading-[130%] text-[20px] mb-6 text-[#1D2E54]">Day by Day Difference</h3>
                   <div class="font-semibold text-[#2B3C6B] border-b-2 border-b-[#445082] max-w-[127px] pb-2 text-[14px]">
@@ -796,16 +796,16 @@
         <div class="flex items-center flex-col">
           <div class="font-semibold text-[#1D2E54] mb-6 leading-[120%] text-[32px]">Share Analysis</div>
           <div class="w-full">
-            <div class="flex gap-2 border-b border-b-[#E6E6E7] items-end pb-6">
+            <div class="flex border-b-[#E6E6E7] border-b gap-2 items-end pb-6">
               <div class="w-full relative">
                 <label class="font-medium text-[14px] text-[#2C2E30] mb-[6px] inline-block" for="email">Add
                   Email</label>
-                <input class="border-[#AAABAC] border px-[14px] rounded-xl w-[100%] pl-[42px] py-[9px]" type="email" name="email" id="email" placeholder="Enter your Email">
+                <input class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] pl-[42px] py-[9px]" type="email" name="email" id="email" placeholder="Enter your Email">
                 <svg class="absolute left-[14px] bottom-[12px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.9165 15L12.3808 10M7.61889 10L2.0832 15M1.6665 5.83337L8.4706 10.5962C9.02158 10.9819 9.29707 11.1748 9.59672 11.2495C9.86142 11.3154 10.1383 11.3154 10.403 11.2495C10.7026 11.1748 10.9781 10.9819 11.5291 10.5962L18.3332 5.83337M5.6665 16.6667H14.3332C15.7333 16.6667 16.4334 16.6667 16.9681 16.3942C17.4386 16.1545 17.821 15.7721 18.0607 15.3017C18.3332 14.7669 18.3332 14.0668 18.3332 12.6667V7.33337C18.3332 5.93324 18.3332 5.23318 18.0607 4.6984C17.821 4.22799 17.4386 3.84554 16.9681 3.60586C16.4334 3.33337 15.7333 3.33337 14.3332 3.33337H5.6665C4.26637 3.33337 3.56631 3.33337 3.03153 3.60586C2.56112 3.84554 2.17867 4.22799 1.93899 4.6984C1.6665 5.23318 1.6665 5.93324 1.6665 7.33337V12.6667C1.6665 14.0668 1.6665 14.7669 1.93899 15.3017C2.17867 15.7721 2.56112 16.1545 3.03153 16.3942C3.56631 16.6667 4.26637 16.6667 5.6665 16.6667Z" stroke="#AAABAC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
-              <button id="share-popup-submit" class="font-semibold text-[16px] duration-300 ease-in-out h-[44px] rounded-xl w-[120px] bg-[#445082] hover:bg-[#2b3c6b] leading-[140%] py-[10px] text-[#ffffff]" type="button">
+              <button id="share-popup-submit" class="font-semibold text-[16px] duration-300 ease-in-out h-[44px] rounded-xl w-[120px] leading-[140%] bg-[#445082] hover:bg-[#2b3c6b] text-[#ffffff] py-[10px]" type="button">
                 Submit
               </button>
             </div>
@@ -816,7 +816,39 @@
                 </svg>
                 Public to Users Team
               </button>
-              <button class="font-semibold text-[#2B3C6B] hover:text-[#1D2E54] text-[16px] bg-[#F3F2FF] duration-300 ease-in-out h-[44px] hover:bg-[#D5D6FD] leading-[150%] p-[10px] rounded-xl w-[120px]" type="button">Copy Link</button>
+              <button class="font-semibold text-[16px] duration-300 ease-in-out h-[44px] rounded-xl w-[120px] bg-[#F3F2FF] hover:bg-[#D5D6FD] hover:text-[#1D2E54] leading-[150%] p-[10px] text-[#2B3C6B]" type="button">Copy Link</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="save-popup" tabindex="-1" class="flex items-center justify-center w-full bg-[#82838580] bottom-0 fixed h-modal hidden left-0 md:h-full md:inset-0 overflow-x-hidden overflow-y-auto right-0 top-0 z-50">
+      <div class="w-full relative accent-block max-w-[640px] mx-4 p-10">
+        <button class="absolute p-4 end-2 top-2" id="close-save-popup" type="button">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7517 1L1.75171 11M1.75171 1L11.7517 11" stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="flex items-center flex-col">
+          <div class="font-semibold text-[#1D2E54] mb-6 leading-[120%] text-[32px]">Save a report</div>
+          <div class="w-full">
+            <div class="flex border-b-[#E6E6E7] border-b gap-2 items-end pb-6">
+              <div class="w-full">
+                <label class="font-medium text-[14px] text-[#2C2E30] mb-[6px] inline-block" for="report">
+                  Enter Report Name
+                </label>
+                <input class="border rounded-xl border-[#AAABAC] px-[14px] w-[100%] py-[9px]" type="text" name="report" id="report" placeholder="Enter report name">
+              </div>
+            </div>
+            <div class="flex items-center gap-3 justify-end pt-6">
+              <button id="save-popup-cancel" class="border rounded-xl text-[16px] h-[44px] border-[#CACBCB] duration-300 ease-in-out font-semibold hover:bg-[#F3F2FF] hover:border-[#AAABAC] leading-[140%] py-[8px] text-[#2C2E30] w-[120px]" type="button">
+                Cancel
+              </button>
+              <button id="save-popup-save" class="font-semibold text-[16px] duration-300 ease-in-out h-[44px] rounded-xl w-[120px] leading-[140%] bg-[#445082] hover:bg-[#2b3c6b] text-[#ffffff] py-[8px]" type="button">
+                Save
+              </button>
             </div>
           </div>
         </div>
@@ -825,12 +857,12 @@
 
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240508144550"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240508144550"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240508144550"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240508144550"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js?_v=20240508144550"></script>
-<script src="js/app.min.js?_v=20240508144550"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240512094915"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240512094915"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240512094915"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240512094915"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js?_v=20240512094915"></script>
+<script src="js/app.min.js?_v=20240512094915"></script>
 
 </body>
 

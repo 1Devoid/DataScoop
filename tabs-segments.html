@@ -7,9 +7,9 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240508144550" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240508144550" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240508144550">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240512094915" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240512094915" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240512094915">
   <title>Jupiter</title>
 </head>
 
@@ -623,7 +623,7 @@
             <div class="">
               <div class="w-full border shadow-md border-[#E6E6E7] py-6 rounded-[28px]">
                 
-                <ul class="flex flex-row flex-wrap list-none gap-6 pb-6 px-6 py-1" role="tablist" data-twe-nav-ref>
+                <ul class="flex pb-6 flex-row flex-wrap gap-6 list-none px-6 py-1" role="tablist" data-twe-nav-ref>
                   <li role="presentation">
                     <a href="#tabs-all" class="text-[14px] font-semibold duration-300 ease-in-out block border-b-2 border-t-0 border-transparent border-x-0 data-[twe-nav-active]:border-[#2B3C6B] data-[twe-nav-active]:text-[#2B3C6B] hover:border-[#2B3C6B] hover:isolate hover:text-[#2B3C6B] pb-2 px-1 text-[#828385]" data-twe-toggle="pill" data-twe-target="#tabs-all" data-twe-nav-active role="tab" aria-controls="tabs-all" aria-selected="true">All</a>
                   </li>
@@ -14435,14 +14435,46 @@
       </div>
     </div>
 
+    
+    <div id="save-popup" tabindex="-1" class="flex items-center w-full justify-center bg-[#82838580] bottom-0 fixed h-modal hidden left-0 md:h-full md:inset-0 overflow-x-hidden overflow-y-auto right-0 top-0 z-50">
+      <div class="w-full relative accent-block max-w-[640px] mx-4 p-10">
+        <button class="absolute p-4 end-2 top-2" id="close-save-popup" type="button">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7517 1L1.75171 11M1.75171 1L11.7517 11" stroke="#2B3C6B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="flex items-center flex-col">
+          <div class="mb-6 font-semibold leading-[120%] text-[#1D2E54] text-[32px]">Save a report</div>
+          <div class="w-full">
+            <div class="flex border-b-[#E6E6E7] border-b gap-2 items-end pb-6">
+              <div class="w-full">
+                <label class="text-[14px] font-medium text-[#2C2E30] mb-[6px] inline-block" for="report">
+                  Enter Report Name
+                </label>
+                <input class="rounded-xl border border-[#AAABAC] px-[14px] w-[100%] py-[9px]" type="text" name="report" id="report" placeholder="Enter report name">
+              </div>
+            </div>
+            <div class="flex items-center gap-3 justify-end pt-6">
+              <button id="save-popup-cancel" class="rounded-xl duration-300 ease-in-out hover:bg-[#F3F2FF] border border-[#CACBCB] font-semibold h-[44px] hover:border-[#AAABAC] leading-[140%] py-[8px] text-[#2C2E30] text-[16px] w-[120px]" type="button">
+                Cancel
+              </button>
+              <button id="save-popup-save" class="rounded-xl duration-300 ease-in-out font-semibold h-[44px] text-[16px] w-[120px] leading-[140%] bg-[#445082] hover:bg-[#2b3c6b] text-[#ffffff] py-[8px]" type="button">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240508144550"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240508144550"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240508144550"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240508144550"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js?_v=20240508144550"></script>
-<script src="js/app.min.js?_v=20240508144550"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240512094915"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240512094915"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240512094915"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240512094915"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js?_v=20240512094915"></script>
+<script src="js/app.min.js?_v=20240512094915"></script>
 </body>
 
 </html>
